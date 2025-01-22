@@ -1,0 +1,64 @@
+:root{
+    --char-family:"Charmonman", sans-serif;
+    --rob-family: "Roboto", sans-serif;
+    --footer-color: #faeeda;
+
+}
+
+body {
+    font-family: var(--rob-family);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Containerul pentru logo */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color:#FEFEE0;
+}
+
+.icon-logo{
+    width: 250px;
+    height: auto;
+}
+ /* bara de navigare */
+ .nav-list{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    padding: 10px 20px;
+    background-color:#FEFEE0;
+    box-shadow: 0 2px 4px rgba(58, 57, 43, 0.921);
+    }
+
+.nav-list li{
+    margin-left:15px;
+    font-family: var(--rob-family);
+    font-size:17px;
+}
+
+/* Media queries pentru dimensiuni mai mici (de exemplu, pentru dispozitive mobile) */
+@media (max-width: 768px) {
+    .icon-logo {
+        width: 120px;
+        /* Micșorează dimensiunea logo-ului pe ecrane mici */
+    }
+}
+
+@media (max-width: 480px) {
+    .icon-logo {
+        width: 100px;
+        /* Dimensiune și mai mică pe telefoane foarte mici */
+    }
+}
