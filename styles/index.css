@@ -43,9 +43,23 @@ ul {
     font-family: var(--rob-family);
     font-size:17px;
 }
-
 /* header container including nav and logo */
 
+/* main-hero section */
+
+.hero {
+    width: 100%;
+    position: relative;
+    /* Menține poziția față de elementele vecine */
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    /* Păstrează proporțiile */
+    display: block;
+    /* Elimină spațiile suplimentare cauzate de img */
+}
 
 /* Media queries pentru dimensiuni mai mici (de exemplu, pentru dispozitive mobile) */
 @media (max-width: 768px) {
