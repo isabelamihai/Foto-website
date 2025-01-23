@@ -9,7 +9,7 @@ body {
     font-family: var(--rob-family);
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
