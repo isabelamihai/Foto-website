@@ -22,9 +22,7 @@ ul {
 .logo-container {
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 100%;
-    background-color:#FEFEE0;
 }
 
 .icon-logo{
@@ -38,8 +36,6 @@ ul {
     align-items: center;
     margin:0 auto;
     padding: 10px 20px;
-    background-color:#FEFEE0;
-    box-shadow: 0 2px 4px rgba(58, 57, 43, 0.921);
     }
 
 .nav-list li{
@@ -47,6 +43,9 @@ ul {
     font-family: var(--rob-family);
     font-size:17px;
 }
+
+/* header container including nav and logo */
+
 
 /* Media queries pentru dimensiuni mai mici (de exemplu, pentru dispozitive mobile) */
 @media (max-width: 768px) {
