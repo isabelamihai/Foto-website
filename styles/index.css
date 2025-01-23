@@ -76,10 +76,10 @@ ul {
              z-index: 1000;
              background-color: #FEFEFE;
              /* Adaugă o culoare de fundal (important pentru vizibilitate) */
-             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+             box-shadow: 0 2px 5px rgba(255, 246, 233, 0.899);
     
          }
-         body{
+        body {
             padding-top:60px;
          }
 }
@@ -89,8 +89,8 @@ ul {
         width: 100px;
         /* Dimensiune și mai mică pe telefoane foarte mici */
     }
-    body{
-        padding-top:100px;
+    body {
+        padding-top:80px;
     }
    
 }

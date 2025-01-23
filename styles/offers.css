@@ -19,9 +19,10 @@
     cursor: pointer;
 }
 
-.offer {
+.offer-title {
     font-family: "Charmonman", sans-serif;
     text-align: center;
+    margin-top:0;
 }
 
 .package img {
@@ -74,4 +75,10 @@
 
 .package button:hover {
     background-color: #b88364;
+}
+
+@media (max-width:768px){
+    .offer-title {
+    margin-top:160px;
+}
 }
