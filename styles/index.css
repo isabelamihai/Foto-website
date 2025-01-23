@@ -67,6 +67,21 @@ ul {
         width: 120px;
         /* Micșorează dimensiunea logo-ului pe ecrane mici */
     }
+         .header-container {
+             position: fixed;
+             top: 0;
+             left: 0;
+             width: 100%;
+             /* Acoperă întreaga lățime */
+             z-index: 1000;
+             background-color: #FEFEFE;
+             /* Adaugă o culoare de fundal (important pentru vizibilitate) */
+             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+         }
+         body{
+            padding-top:60px;
+         }
 }
 
 @media (max-width: 480px) {
@@ -74,4 +89,8 @@ ul {
         width: 100px;
         /* Dimensiune și mai mică pe telefoane foarte mici */
     }
+    body{
+        padding-top:80px;
+    }
+   
 }
