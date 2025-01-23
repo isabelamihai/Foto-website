@@ -72,15 +72,17 @@ ul {
              top: 0;
              left: 0;
              width: 100%;
+             height: auto;
              /* Acoperă întreaga lățime */
              z-index: 1000;
-             background-color: #FEFEFE;
+             background-color: #FEFDF0;
              /* Adaugă o culoare de fundal (important pentru vizibilitate) */
              box-shadow: 0 2px 5px rgba(255, 246, 233, 0.899);
     
          }
-        body {
-            padding-top:60px;
+
+         .hero-container{
+            padding-top:100px;
          }
 }
 
@@ -89,8 +91,8 @@ ul {
         width: 100px;
         /* Dimensiune și mai mică pe telefoane foarte mici */
     }
-    body {
-        padding-top:80px;
-    }
+        .hero-container {
+            padding-top: 120px;
+        }
    
 }

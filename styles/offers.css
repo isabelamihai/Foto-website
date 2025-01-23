@@ -22,7 +22,6 @@
 .offer-title {
     font-family: "Charmonman", sans-serif;
     text-align: center;
-    margin-top:0;
 }
 
 .package img {
@@ -78,7 +77,10 @@
 }
 
 @media (max-width:768px){
-    .offer-title {
-    margin-top:160px;
+    .offers{
+        padding-top:200px;
+    }
 }
+
+@media (max-width:480px) {
 }
