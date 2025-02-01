@@ -18,6 +18,12 @@ ul {
     list-style-type: none;
 }
 
+h2 {
+    font-family: var(--char-family);
+    font-size: 21px;
+    font-weight: 600;
+}
+
 /* Containerul pentru logo */
 .logo-container {
     display: flex;
@@ -25,7 +31,7 @@ ul {
     width: 100%;
 }
 
-.icon-logo{
+.logo-header{
     width: 250px;
     height: auto;
 }
@@ -98,36 +104,33 @@ ul {
 
 /* Media queries pentru dimensiuni mai mici (de exemplu, pentru dispozitive mobile) */
 @media (max-width: 768px) {
-    .icon-logo {
-        width: 120px;
-        /* Micșorează dimensiunea logo-ului pe ecrane mici */
+     .logo-header{
+        width: 200px;
+     }
     }
-         .header-container {
-             position: fixed;
+
+         /* .header-container {
+             position:fixed;
              top: 0;
              left: 0;
              width: 100%;
              height: auto;
-             /* Acoperă întreaga lățime */
-             z-index: 1000;
+             z-index: 100;
              background-color: #FEFDF0;
-             /* Adaugă o culoare de fundal (important pentru vizibilitate) */
              box-shadow: 0 2px 5px rgba(255, 246, 233, 0.899);
-    
          }
 
          .hero-container{
             padding-top:100px;
          }
-}
+} */
 
 @media (max-width: 480px) {
-    .icon-logo {
-        width: 100px;
+    .logo-header {
+        width:100%;
         /* Dimensiune și mai mică pe telefoane foarte mici */
     }
-        .hero-container {
+        /* .hero-container {
             padding-top: 120px;
-        }
-   
+        } */
 }
