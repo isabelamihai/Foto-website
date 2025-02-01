@@ -61,6 +61,41 @@ ul {
     /* Elimină spațiile suplimentare cauzate de img */
 }
 
+.follow{
+    font-family: var(--char-family);
+    font-size: 18px;
+}
+.hero-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap:10px;
+}
+
+/* footer */
+.social-media-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.social-media {
+    height: 30px;
+    width: 30px;
+}
+
+.terms, .design{
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+.footer-container{
+    background-color: var(--footer-color);
+    padding: 10px 0;
+}
+
 /* Media queries pentru dimensiuni mai mici (de exemplu, pentru dispozitive mobile) */
 @media (max-width: 768px) {
     .icon-logo {
