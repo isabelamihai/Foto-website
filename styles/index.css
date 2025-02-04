@@ -46,27 +46,7 @@ h2 {
     height: auto;
     display:block;
 }
-/* Meniul Hamburger (apare doar pe mobil) */
-.hamburger-menu {
-    display: none;
-    /* Inițial ascuns */
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 30px;
-    height: 25px;
-    cursor: pointer;
-    position: absolute;
-    right: 10px;
-    /* Plasăm hamburger-ul în dreapta */
-}
 
-.hamburger-menu .bar {
-    width: 100%;
-    height: 4px;
-    background-color: #333;
-    border-radius: 2px;
-}
 /* Navigația */
 .nav-container {
     display: flex;
@@ -181,31 +161,7 @@ h2 {
              left: 50%;
              transform: translateX(-50%);
          }
-    
-         /* Meniul devine vertical pe mobil și este ascuns inițial */
-         .nav-container {
-             display: none;
-             width: 100%;
-         }
-    
-         /* Meniul se afişează când hamburger-ul este activ */
-         .nav-container.active {
-             display: flex;
-             flex-direction: column;
-             align-items: center;
-             background-color: #fff;
-             position: absolute;
-             top: 80px;
-             /* Ajustează după necesitate */
-             width: 100%;
-             z-index: 1;
-         }
-    
-         /* Meniul hamburger devine vizibil pe mobil */
-         .hamburger-menu {
-             display: flex;
-         }
-    
+
          /* Meniul pe mobil */
          .nav-list {
              display: flex;
@@ -226,8 +182,9 @@ h2 {
          .hero{
             background-image: url('../images/Newborn\ Dami\ \ \(2\)\ \(1\).webp');
          }
-         }
-
+         .about-container{
+            background-image: url('../images/about\ (1).webp');
+         }        }
 
 @media (max-width: 480px) {
     .hero {
