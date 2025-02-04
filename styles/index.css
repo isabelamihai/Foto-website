@@ -186,7 +186,7 @@ svg.burger-icon {
          .nav-list {
                 display: flex;
                     flex-direction: column;
-                    width: 100%;
+                    width: 50%;
                     background-color:white;
                     position: absolute;
                     top: 40px;
