@@ -184,16 +184,18 @@ svg.burger-icon {
 
          /* Meniul pe mobil */
          .nav-list {
-             display: flex;
-             flex-direction: column;
-             align-items: self-end;
-             width: 100%;
-                background-color: white;
-                position: absolute;
-                top: 40px;
-                right:0;
-                z-index: 1;
-                left: 40px;
+                display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    background-color:var(--footer-color);
+                    position: absolute;
+                    top: 40px;
+                    z-index: 1;
+                    left: 40px;
+                    height: initial;
+                    height: 700px;
+                    left: 300px;
+                    box-shadow: 0 2px 5px 2px rgb(219, 170, 35);
          }
     
          .nav-list li {
