@@ -126,24 +126,32 @@ svg.burger-icon {
     margin: 0 auto;
     padding: 50px;
     text-align: center;
+    /* Center text inside */
     background-image: url('../images/about.png');
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-top: 50px;
-    margin-bottom:50px;
+    margin-bottom: 50px;
     color: #333;
+
+    /* Flexbox pentru alinierea imaginii */
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    flex-direction: column;
+    /* Stack elements vertically */
 }
 
 .about-image {
+    max-width: 800px;
     width: 100%;
-    /* Asigură-te că imaginea nu depășește 100% din lățimea containerului */
     height: auto;
-    /* Menține proporțiile imaginii */
     object-fit: cover;
-    display: block;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .about-title {
