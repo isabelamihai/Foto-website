@@ -97,3 +97,12 @@
         margin-bottom: 10px;
         font-family:var(--char-family);
     }
+
+         @media (max-width:768px) {
+        .contacts {
+            padding-top:120px;
+        }
+         }
+
+         @media (max-width:480px) {
+         }

@@ -77,9 +77,10 @@
 }
 
 @media (max-width:768px){
-    /* .offer-title{
-        padding-top:180px;
-    } */
+
+    .offers{
+        padding-top:120px;
+    }
 }
 
 @media (max-width:480px) {

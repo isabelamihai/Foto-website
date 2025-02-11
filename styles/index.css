@@ -228,6 +228,17 @@ footer{
      .logo-header{
         width: 200px;
      }
+     .header-container{
+        position: fixed;
+        z-index: 1000;
+        background-color: white;
+        box-shadow: 0 2px 5px 2px rgb(219, 170, 35);
+     }
+
+     .hero-container{
+        padding-top: 100px;
+     }
+
          /* Logo-ul este centrat pe mobil */
          .logo-container {
              left: 50%;
