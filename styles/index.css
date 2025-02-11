@@ -97,7 +97,7 @@ svg.burger-icon {
 
 /* main-hero section */
 .hero-container{
-    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -151,8 +151,9 @@ svg.burger-icon {
 }
 
 .about-image {
-    max-width: 1200px;
     width: 100%;
+    max-width: 1000px;
+    padding: 20px 0px;
     height: auto;
     object-fit: cover;
     margin: 0;
