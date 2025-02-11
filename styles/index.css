@@ -224,7 +224,7 @@ footer{
 
          /* Meniul pe mobil */
          .nav-list {
-                display: flex;
+                    display: flex;
                     flex-direction: column;
                     width: 100%;
                     background-color:white;
@@ -232,9 +232,7 @@ footer{
                     top: 40px;
                     z-index: 1;
                     left: 40px;
-                    height: initial;
-                    height: 600px;
-                    left: 300px;
+                    height: 100vh;
                     box-shadow: 0 2px 5px 2px rgb(219, 170, 35);
          }
     
