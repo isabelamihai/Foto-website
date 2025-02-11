@@ -268,9 +268,17 @@ footer{
          .hero{
             background-image: url('../images/hero-tablet.avif');
          }
-         .about-container{
-            background-image: url('');
-         }  
+
+         .about-image{
+            max-width: 500px;
+         }
+            .about-content{
+                padding: 0px 30px;
+            }
+        .about-title{
+        padding: 0px 30px;
+        padding-top:50px;
+         }
         }      
 
 @media (max-width: 480px) {
