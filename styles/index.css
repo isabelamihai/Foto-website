@@ -122,8 +122,8 @@ svg.burger-icon {
 .about-container {
     position: relative;
     width: 100%;
-    max-width: 800px;
-    margin: auto;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 50px;
     text-align: center;
     background-image: url('../images/about.png');
@@ -138,14 +138,25 @@ svg.burger-icon {
 
 .about-image {
     width: 100%;
-    max-width: 500px;
+    /* Asigură-te că imaginea nu depășește 100% din lățimea containerului */
+    height: auto;
+    /* Menține proporțiile imaginii */
+    object-fit: cover;
     display: block;
-    margin: 0 auto 20px;
-    border-radius: 10px;
+    margin: 0 auto;
 }
 
 .about-title {
     margin-top:80px;
+}
+
+/* .about-end {
+    font-family: var(--char-family);
+} */
+
+.about-end {
+    font-family: var(--char-family);
+    font-weight: 600;
 }
 
 /* footer section */
@@ -186,7 +197,7 @@ svg.burger-icon {
          .nav-list {
                 display: flex;
                     flex-direction: column;
-                    width: 50%;
+                    width: 100%;
                     background-color:white;
                     position: absolute;
                     top: 40px;
@@ -224,7 +235,7 @@ svg.burger-icon {
                background-color: white;
                position: absolute;
                top: 80px;
-               width: 100%;
+               width: 50%;
                z-index: 1;
            }
          .hero{
@@ -238,5 +249,10 @@ svg.burger-icon {
 @media (max-width: 480px) {
     .hero {
         background-image: url('../images/hero-mobile.avif');
+        height: 500px;
+    }
+
+    .nav-list{
+        width: 20%;
     }
 }
