@@ -131,7 +131,7 @@ svg.burger-icon {
     margin: 0 auto;
     text-align: center;
     /* Center text inside */
-    background-image: url('../images/about.png');
+    background-image: url('../images/about-background-desktop.png');
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -269,6 +269,9 @@ footer{
             background-image: url('../images/hero-tablet.avif');
          }
 
+         .about-container{
+            background-image: url('../images/about-background-tablet.png');
+         }
          .about-image{
             max-width: 500px;
          }
@@ -277,7 +280,6 @@ footer{
             }
         .about-title{
         padding: 0px 30px;
-        padding-top:50px;
          }
         }      
 
@@ -289,5 +291,19 @@ footer{
 
     .nav-list{
         width: 20%;
+    }
+    .about-container{
+        background-image: url('../images/about-background-mobile.png');
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+    .about-image
+    {
+        max-width: 300px;
+    
+    }
+    .about-content{
+        padding: 0px 20px;
     }
 }
