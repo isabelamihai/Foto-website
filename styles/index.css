@@ -284,13 +284,16 @@ footer{
         }      
 
 @media (max-width: 480px) {
+    .logo-header {
+            width: 150px;
+        }
     .hero {
         background-image: url('../images/hero-mobile.avif');
         height: 500px;
     }
 
-    .nav-list{
-        width: 20%;
+    .hero-media{
+        flex-direction: column;
     }
     .about-container{
         background-image: url('../images/about-background-mobile.png');
