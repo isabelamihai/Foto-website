@@ -1,12 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
     const images = document.querySelectorAll('.image-container img');
 
-    const observer = new IntersectionObserver((entries) => {
+    const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-            } else {
-                entry.target.classList.remove('visible'); // Opțional, dacă vrei să dispară la ieșire
+                observer.unobserve(entry.target); // 🔥 Oprește observarea după ce imaginea devine vizibilă
             }
         });
     }, { threshold: 0.3, rootMargin: "50px" });
