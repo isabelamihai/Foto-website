@@ -1,7 +1,8 @@
 :root{
     --char-family:"Charmonman", sans-serif;
     --rob-family: "Roboto", sans-serif;
-    --footer-color: #faeeda;
+    --footer-color: #FEFDF0;
+    
 
 }
 
@@ -159,21 +160,21 @@ svg.burger-icon {
     margin-top: 20px;
     gap:10px;
     background-color:var(--footer-color);
+    border-width: 3px;
+    box-shadow: 0 2px 5px 3px rgba(15, 13, 13, 0.1);
 }
 
 /* about section */
 .about-container {
     position: relative;
     width: 100%;
-    max-width: 1200px;
+    max-width: 480px;
     margin: 0 auto;
     text-align: center;
-    /* Center text inside */
-    background-image: url('../images/about-background-desktop.png');
-    background-size: cover;
-    background-position: center;
+    background-color:#FEFDF0;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-width: 3px;
+    box-shadow: 0 2px 5px 3px rgba(29, 25, 25, 0.1);
     margin-top: 50px;
     margin-bottom: 50px;
     color: #333;
@@ -220,10 +221,6 @@ svg.burger-icon {
 
 }
 
-/* .about-end {
-    font-family: var(--char-family);
-} */
-
 .about-end {
     font-family: var(--char-family);
     font-weight: 600;
@@ -252,6 +249,8 @@ svg.burger-icon {
 
 footer{
     background-color: var(--footer-color);
+    border-width: 3px;
+    box-shadow: 0 2px 5px 3px rgba(29, 25, 25, 0.1);
     text-align: center;
 }
 .footer-container{
@@ -331,7 +330,6 @@ footer{
          }
 
          .about-container{
-            background-image: url('../images/about-background-tablet.png');
             max-width: 768px;
             margin-bottom: 30px;
             margin-top: 30px;
@@ -357,17 +355,36 @@ footer{
     }
 
     .about-container{
-        background-image: url('../images/about-background-mobile.png');
+        /* background-image: url('../images/about-background-mobile.png'); */
         margin-top: 20px;
         margin-bottom: 20px;
         max-width: 480px;
     }
     .about-image
     {
-        max-width: 400px;
+        max-width: 350px;
         height: auto;
     }
     .about-title {
         margin-top:0px;
+    }
+}
+
+@media (min-width:1200px)
+{
+    .footer-container{
+        padding: 10px 10px;
+    }
+    .about-container{
+        max-width: 1200px;
+    }
+    .about-image{
+        max-width: 1000px;
+    }
+    .about-content{
+        padding: 0px 100px;
+    }
+    .about-title{
+        padding: 0px 100px;
     }
 }
