@@ -24,6 +24,27 @@ h2 {
     font-weight: 600;
 }
 
+/* Stil pentru containerele imaginilor */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    /* Spațiere între imagini */
+}
+
+/* Stil pentru imagini */
+.image-container img {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.image-container img.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* Containerul headerului */
 .header-container {
     display: flex;
