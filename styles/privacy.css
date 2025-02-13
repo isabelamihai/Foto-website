@@ -18,7 +18,21 @@
 
 .privacy-container{
     width: 100%;
-    max-width: 1200px;
+    max-width: 480px;
     margin: 0 auto;
     padding: 10px 0;
+}
+
+@media (min-width: 768px){
+    .privacy-container{
+        padding: 10px 20px;
+        max-width: 800px;
+    }
+}
+
+@media (min-width: 1200px){
+    .privacy-container{
+        padding: 10px 10px;
+        max-width: 1200px;
+    }
 }
