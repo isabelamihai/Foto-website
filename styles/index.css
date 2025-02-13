@@ -35,7 +35,7 @@ h2 {
 
 .image-container img {
     opacity: 0;
-    transform: translateX(300px);
+    transform: translateX(200px);
     transition: opacity 1s ease-in, transform 1s ease-in;
 }
 
@@ -47,8 +47,8 @@ h2 {
 /* tranzitii text */
 .text-container {
     opacity: 0;
-    transform: translateX(-300px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
+    transform: translateX(-200px);
+    transition: opacity 1s ease-in, transform 1s ease-in;
 }
 
 .text-container.visible {
