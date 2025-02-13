@@ -44,6 +44,11 @@ h2 {
     transform: translateX(0);
 }
 
+img{
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
 /* tranzitii text */
 .text-container {
     opacity: 0;
@@ -137,6 +142,8 @@ svg.burger-icon {
     height:100vh;
     background-image: url('../images/hero-dektop.avif');
     background-repeat: no-repeat;
+    -webkit-user-drag: none;
+    user-select: none;
     background-size:cover;
     background-position: center center;
 }
