@@ -9,13 +9,13 @@
     padding-top:120px;
 }
 .terms-section h3{
-    font-size: 21px;
+    font-size: 18px;
     font-family: var(--char-family);
     font-weight: 600;
 }
 
 .terms-section span{
-    font-size: 21px;
+    font-size: 18px;
     font-family: var(--char-family);
     font-weight: 600;
 }
@@ -26,6 +26,8 @@
     font-family: var(--char-family);
 }
 .terms-container {
+    display:flex;
+    flex-wrap: wrap;
     width: 100%;
     max-width: 480px;
     margin: 0 auto;
