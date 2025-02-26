@@ -1,3 +1,6 @@
+.privacy-section ul{
+    list-style-type:circle;
+}
 .privacy-section h3{
     font-family: var(--char-family);
     font-weight: 600;
@@ -5,8 +8,7 @@
 }
 
 .privacy-section h2{
-    font-size: 18px;
-
+    font-size: 21px;
 }
 
 .privacy-section h1{
@@ -32,7 +34,10 @@
 
 @media (min-width: 1200px){
     .privacy-container{
-        padding: 10px 10px;
+        padding: 30px 20px;
         max-width: 1200px;
+    }
+    .privacy-section h1{
+        padding-top:0px;
     }
 }

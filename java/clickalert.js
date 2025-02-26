@@ -16,7 +16,7 @@ document.addEventListener('dragstart', function(event) {
 let style = window.getComputedStyle(event.target);
     if (style.backgroundImage !== "none") {
         event.preventDefault();
-        alert("Click dreapta pe imagini este dezactivat. Toate drepturile sunt rezervate.");
+        alert("Click dreapta este dezactivat. Toate drepturile sunt rezervate.");
     }
 
 document.querySelectorAll('img').forEach(img => img.setAttribute('draggable', 'false'));
