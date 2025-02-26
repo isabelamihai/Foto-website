@@ -67,11 +67,11 @@
                     <picture class="image-container">
                         <!-- Versiunea AVIF pentru fiecare dimensiune -->
                         <source class="about-image" srcset="./images/about-mobile.avif 800w, ./images/about-tablet.avif 1200w,
-                            ./images/about-desktop.avif 2000w" type="image/avif" draggable="false">
+                            ./images/about-desktop.avif 2000w" type="image/avif">
                         <!-- Imaginea JPEG de fallback pentru browserele care nu acceptă AVIF -->
                         <img class="about-image" src="./images/about-desktopfall.jpg"
                             srcset="./images/about-mobilefall.jpg 800w, ./images/about-tabletfall.jpg 1200w, ./images/about-desktopfall.jpg 2000w"
-                            sizes="(max-width: 600px) 100vw, 2000px" alt="Poza Laura Dan" draggable="false">
+                            sizes="(max-width: 600px) 100vw, 2000px" alt="Poza Laura Dan">
                     </picture>
                     <h2 class=" about-title text-container">
                         "Salutare, sunt Laura, fotograful tău pentru momente de neuitat."
@@ -116,7 +116,8 @@
         </div>
     </footer>
     <script src="./java/menuburger.js"></script>
-    <script src="./java/nocopy.js"></script>
+    <!-- <script src="./java/nocopy.js"></script> -->
+    <script src="./java/clickalert.js"></script>
     <script src="./java/transition-img.js"></script>
     <script src="./java/transition-text.js"></script>
 </body>

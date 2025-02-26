@@ -45,9 +45,12 @@ h2 {
     transform: translateX(0);
 }
 
-img{
-    -webkit-user-drag: none;
+img,a,p,span,div {
     user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 /* tranzitii text */
