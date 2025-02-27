@@ -116,11 +116,10 @@
         font-size: 16px;
         margin-bottom: 10px;
         font-family:var(--char-family);
+        color: #836047;
+        font-weight:600 ;
+
     }
-        .contact-info a {
-            color: #E4405F;
-            text-decoration: none;
-        }
 
          @media (min-width:768px) {
          }
