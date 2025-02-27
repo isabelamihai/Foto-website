@@ -1,0 +1,47 @@
+.thanks-container{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px 10px;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thanks-section .thanks-icon{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px 0px;
+    height: auto;
+    object-fit: cover;
+    margin: 0;
+}
+
+.thanks-section h2{
+    font-size: 24px;
+    font-family: var(--char-family);
+    font-weight: 600;
+    color: #836047;
+}
+
+ .thanks-section .back-arrow{
+    width: 100%;
+    max-width:30px;
+    height: auto;
+    margin: 0;
+}
+
+.thanks-section .back-text{
+    text-decoration: none;
+    color: #836047;
+    font-family: var(--char-family);
+    font-weight: 600;
+    font-size: 21px;
+}
+
+.back-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
