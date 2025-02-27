@@ -94,7 +94,7 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        margin-left: 20px;
+        margin-left: 50px;
         margin-top: 20px;
     }
 
@@ -121,6 +121,7 @@
 
     }
 
+        /* TABLETE */
          @media (min-width:768px) {
             .contact-container {
                 padding: 10px 20px;
@@ -139,9 +140,13 @@
         .contact-form textarea {
             width: 700px;
         }
-
+        .contact-form label{
+            font-size:18px;
+            margin-left: 50px;
+        }
          }
 
+       /* LAPTOP/TV SCREENS */
          @media(min-width:1200px) {
             .contact-container {
                 padding: 30px 20px;
@@ -167,6 +172,7 @@
 
         .contact-form label{
             font-size:21px;
+            margin-left:150px;
         }
 
         .contact-info h3{
