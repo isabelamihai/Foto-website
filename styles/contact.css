@@ -122,9 +122,31 @@
     }
 
          @media (min-width:768px) {
+            .contact-container {
+                padding: 10px 20px;
+                max-width: 800px;
+            }
+            .contact-title {
+            font-size:21px;
+        }
+
+        .contact-text{
+            font-size: 18px;
+        }
+        .contact-form input{
+            width: 600px;
+        }
+        .contact-form textarea {
+            width: 700px;
+        }
+
          }
 
          @media(min-width:1200px) {
+            .contact-container {
+                padding: 30px 20px;
+                max-width: 1200px;
+            }
         .contacts {
             padding-top:0px;
         }
@@ -140,7 +162,7 @@
             width: 800px;
         }
         .contact-form textarea {
-            width: 800px;
+            width: 900px;
         }
 
         .contact-form label{
