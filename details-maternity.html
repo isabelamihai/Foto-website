@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
         integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Oferte promotionale</title>
     <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="./styles/offers.css">
+    <link rel="stylesheet" href="./styles/maternity.css">
+    <title>Detalii-oferte</title>
 </head>
 
 <body>
@@ -37,7 +37,7 @@
             </div>
 
             <!-- navigare -->
-            <nav class="nav-container">
+            <nav class="nav-container" id="nav-container">
                 <ul class="nav-list">
                     <li><a href="./index.html">ACASA</a></li>
                     <li><a href="./offers.html">OFERTE</a></li>
@@ -48,40 +48,62 @@
         </div>
     </header>
     <main>
-        <div class="offers">
-            <h2 class="offer-title">Oferte si Pachete</h2>
-            <section class="packages">
-                <div class="package">
-                    <img src="./images/toa-heftiba-vgFmPHBOJ5w-unsplash.jpg" alt="Pachet 1">
-                    <div class="package-content">
-                        <h2>Maternitate</h2>
-                        <button onclick="window.location.href='details-maternity.html'">Vezi Detalii</button>
+        <section class="maternity-section">
+            <div class="maternity-container">
+                <h2 class="maternity-title">Pachet Maternitate</h2>
+                <div class="maternity-content">
+                    <picture class="m-container">
+                        <!-- Versiunea AVIF pentru fiecare dimensiune -->
+                        <source srcset="
+                                ./images/maternity-mobile.avif 400w, 
+                                ./images/maternity-tablet.avif 800w, 
+                                ./images/maternity-desktop.avif 1200w" type="image/avif">
+                        <!-- Imaginea JPEG de fallback -->
+                        <img class="maternity-image" src="./images/maternity-desktopfall.jpg" srcset="
+                                ./images/maternity-mobilefall.jpg 400w, 
+                                ./images/maternity-tabletfall.jpg 800w, 
+                                ./images/maternity-desktopfall.jpg 1200w"
+                            sizes="(max-width: 600px) 400px, (max-width: 1024px) 800px, 1200px"
+                            alt="Maternity Photography">
+                    </picture>
+
+                    <div class="maternity-text">
+                        <ul>
+                            <li>Sesiune foto maternitate: 600 lei</li>
+                            <li>
+                                <svg>
+                                    <use href="./images/svg/symbol-defs.svg#icon-bullets"></use>
+                                </svg>
+                            </li>
+                            <li>30 de cadre editate in format digital</li>
+                            <li>
+                                <svg>
+                                    <use href="./images/svg/symbol-defs.svg#icon-bullets"></use>
+                                </svg>
+                            </li>
+                            <li>3 decoruri</li>
+                            <li>
+                                <svg>
+                                    <use href="./images/svg/symbol-defs.svg#icon-bullets"></use>
+                                </svg>
+                            </li>
+                            <li>Tinute asigurate de studio</li>
+                            <li>
+                                <svg>
+                                    <use href="./images/svg/symbol-defs.svg#icon-bullets"></use>
+                                </svg>
+                            </li>
+                            <li>Durata sedinta: 60 de minute</li>
+                            <li>
+                                <svg>
+                                    <use href="./images/svg/symbol-defs.svg#icon-bullets"></use>
+                                </svg>
+                            </li>
+                            <li>Termen de predare: cca 10 zile</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="package">
-                    <img src="./images/janko-ferlic-ZNVGL_Pcf74-unsplash.jpg" alt="Pachet 2">
-                    <div class="package-content">
-                        <h2>Newborn</h2>
-                        <button onclick="window.location.href='details-newborn.html'">Vezi Detalii</button>
-                    </div>
-                </div>
-                <div class="package">
-                    <img src="./images/janko-ferlic-ZNVGL_Pcf74-unsplash.jpg" alt="Pachet 3">
-                    <div class="package-content">
-                        <h2>Aniversare</h2>
-                        <button onclick="window.location.href='details-aniversary.html'">Vezi Detalii</button>
-                    </div>
-                </div>
-                <div class="package">
-                    <img src="./images/janko-ferlic-ZNVGL_Pcf74-unsplash.jpg" alt="Pachet 4">
-                    <div class="package-content">
-                        <h2>Eveniment</h2>
-                        <button onclick="window.location.href='details-event.html'">Vezi Detalii</button>
-                    </div>
-                </div>
-        </div>
         </section>
-        </div>
     </main>
     <footer>
         <div class="footer-container">
@@ -105,8 +127,6 @@
             </p>
         </div>
     </footer>
-    <script src="./java/menuburger.js"></script>
-    <script src="./java/nocopy.js"></script>
 </body>
 
 </html>
