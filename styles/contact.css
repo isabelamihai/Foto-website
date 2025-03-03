@@ -30,6 +30,7 @@
         margin: 10px 0;
         padding: 10px;
         border: 2px solid #d8a47f;
+        box-shadow: 1px 3px 2px 3px rgb(250, 238, 218);
         border-radius: 5px;
         font-family:var(--rob-family);
     }
@@ -39,6 +40,7 @@
         margin: 10px 0;
         padding: 10px;
         border: 2px solid #d8a47f;
+        box-shadow: 1px 4px 2px 3px rgb(250, 238, 218);
         border-radius: 5px;
         font-family:var(--rob-family);
     }
