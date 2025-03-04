@@ -29,8 +29,8 @@
         height: 40px;
         margin: 10px 0;
         padding: 10px;
-        border: 2px solid #d8a47f;
-        box-shadow: 1px 3px 2px 3px rgb(250, 238, 218);
+        border: 2px solid var(--border-color);
+        box-shadow: 1px 3px 2px 3px var(--box-shadow-color);
         border-radius: 5px;
         font-family:var(--rob-family);
     }
@@ -39,8 +39,8 @@
         height: 100px;
         margin: 10px 0;
         padding: 10px;
-        border: 2px solid #d8a47f;
-        box-shadow: 1px 4px 2px 3px rgb(250, 238, 218);
+        border: 2px solid var(--border-color);
+        box-shadow: 1px 4px 2px 3px var(--box-shadow-color);
         border-radius: 5px;
         font-family:var(--rob-family);
     }
@@ -54,12 +54,12 @@
         border-radius: 5px;
         font-family: var(--rob-family);
         cursor: pointer;
-        background-color: #d8a47f;
+        background-color: var(--border-color);
         color: #fff;
     }
 
     .contact-form button:hover, .contact-form button:focus{
-        background-color: #836047;
+        background-color:var(--dark-brown);
         color: #fff;
 
     }
@@ -70,7 +70,7 @@
         font-family: var(--char-family);
     }
     .contact-form input[type="submit"]{
-        background-color: #836047;
+        background-color: var(--dark-brown);
         color: #fff;
         border: none;
     }
@@ -81,11 +81,11 @@
         cursor: pointer;
     }
     .contact-form input[type="submit"]:hover{
-        background-color: #d8a47f;
+        background-color: var(--border-color);
         color: #fff;
     }
     .contact-form input[type="submit"]{
-        background-color: #d8a47f;
+        background-color: var(--border-color);
         color: #fff;
         border: none;
     }
