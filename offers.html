@@ -52,28 +52,82 @@
             <h2 class="offer-title">Oferte si Pachete</h2>
             <section class="packages">
                 <div class="package">
-                    <img src="./images/toa-heftiba-vgFmPHBOJ5w-unsplash.jpg" alt="Pachet 1">
+                    <picture class="package-maternity">
+                        <!-- Versiunea AVIF pentru fiecare dimensiune -->
+                        <source srcset="
+                                                    ./images/maternity-mobile.avif 400w, 
+                                                    ./images/maternity-tablet.avif 800w, 
+                                                    ./images/maternity-desktop.avif 1200w" type="image/avif">
+                        <!-- Imaginea JPEG de fallback -->
+                        <img class="maternity-image" src="./images/maternity-desktopfall.jpg" srcset="
+                                                    ./images/maternity-mobilefall.jpg 400w, 
+                                                    ./images/maternity-tabletfall.jpg 800w, 
+                                                    ./images/maternity-desktopfall.jpg 1200w"
+                            sizes="(max-width: 600px) 400px, (max-width: 1024px) 800px,(max-width: 1025px) 1200px"
+                            alt="Maternity Photo Package">
+                    </picture>
                     <div class="package-content">
                         <h2>Maternitate</h2>
                         <button onclick="window.location.href='details-maternity.html'">Vezi Detalii</button>
                     </div>
                 </div>
                 <div class="package">
-                    <img src="./images/janko-ferlic-ZNVGL_Pcf74-unsplash.jpg" alt="Pachet 2">
+                    <picture class="package-newborn">
+                        <!-- Versiunea AVIF pentru fiecare dimensiune -->
+                        <source srcset="
+                                            ./images/newborn-mobile.avif 400w, 
+                                            ./images/newborn-tablet.avif 800w, 
+                                            ./images/newborn-desktop.avif 1200w" type="image/avif">
+                        <!-- Imaginea JPEG de fallback -->
+                        <img class="newborn-image" src="./images/newborn-desktopfall.jpg" srcset="
+                                            ./images/newborn-mobilefall.jpg 400w, 
+                                            ./images/newborn-tabletfall.jpg 800w, 
+                                            ./images/newborn-desktopfall.jpg 1200w"
+                            sizes="(max-width: 600px) 400px, (max-width: 1024px) 800px,(max-width: 1025px) 1200px"
+                            alt="Newborn Photo Package">
+                    </picture>
                     <div class="package-content">
                         <h2>Newborn</h2>
                         <button onclick="window.location.href='details-newborn.html'">Vezi Detalii</button>
                     </div>
                 </div>
                 <div class="package">
-                    <img src="./images/janko-ferlic-ZNVGL_Pcf74-unsplash.jpg" alt="Pachet 3">
+                    <picture class="package-anniversary">
+                        <!-- Versiunea AVIF pentru fiecare dimensiune -->
+                        <source srcset="
+                            ./images/ann-mobile.avif 500w, 
+                            ./images/ann-tablet.avif 800w, 
+                            ./images/ann-desktop.avif 1200w" type="image/avif">
+                        <!-- Imaginea JPEG de fallback -->
+                        <img class="anniversary-image" src="./images/ann-desktopfall.jpg" srcset="
+                            ./images/ann-mobilefall.jpg 500w, 
+                            ./images/ann-tabletfall.jpg 800w, 
+                            ./images/ann-desktopfall.jpg 1200w" sizes="(max-width: 600px) 500px, 
+                                    (max-width: 1024px) 800px, 
+                                    (max-width: 1025px) 1200px, 
+                                    1200px" alt="Anniversary Photo Package">
+                    </picture>
                     <div class="package-content">
                         <h2>Aniversare</h2>
                         <button onclick="window.location.href='details-aniversary.html'">Vezi Detalii</button>
                     </div>
                 </div>
                 <div class="package">
-                    <img src="./images/janko-ferlic-ZNVGL_Pcf74-unsplash.jpg" alt="Pachet 4">
+                    <picture class="package-event">
+                        <!-- Versiunea AVIF pentru fiecare dimensiune -->
+                        <source srcset="
+                        ./images/event-mobile.avif 500w, 
+                        ./images/event-tablet.avif 800w, 
+                        ./images/event-desktop.avif 1200w" type="image/avif">
+                        <!-- Imaginea JPEG de fallback -->
+                        <img class="event-image" src="./images/event-desktopfall.jpg" srcset="
+                        ./images/event-mobilefall.jpg 500w, 
+                        ./images/event-tabletfall.jpg 800w, 
+                        ./images/event-desktopfall.jpg 1200w" sizes="(max-width: 600px) 500px, 
+                                (max-width: 1024px) 800px, 
+                                (max-width: 1025px) 1200px, 
+                                1200px" alt="Event Photo Package">
+                    </picture>
                     <div class="package-content">
                         <h2>Eveniment</h2>
                         <button onclick="window.location.href='details-event.html'">Vezi Detalii</button>
