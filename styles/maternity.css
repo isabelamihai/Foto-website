@@ -14,15 +14,26 @@
     text-align: center;
 }
 
+.maternity-text ul{
+    padding-left: 0;
+}
+
 .maternity-text svg{
     width: 20px;
     height: 20px;
+    margin-right: 10px;
 }
 
 .maternity-text{
     font-family: var(--char-family);
     font-size: 18px;
     font-weight: 600;
+}
+.maternity-text li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 
 .maternity-image{
