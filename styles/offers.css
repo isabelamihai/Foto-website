@@ -91,4 +91,7 @@
         justify-content: center;
         max-width: 1200px;
     }
+        .offers {
+            padding-top: 0px;
+        }
 }
