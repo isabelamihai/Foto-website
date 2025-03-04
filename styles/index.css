@@ -108,7 +108,6 @@ img,a,p,span,div {
 .logo-header {
     width: 150px;
     height: auto;
-    display: flex;
 }
 /* Logo-ul este centrat pe mobil */
  .logo-container {
