@@ -71,7 +71,6 @@ img,a,p,span,div {
 /* Page styling detailed */
 .header-container {
     position: fixed;
-    max-width: 100%;
     z-index: 1000;
     background-color: white;
     width: 100%;
@@ -97,10 +96,6 @@ img,a,p,span,div {
      left: 50%;
      height: 100vh;
      box-shadow: 0px 3px 5px 2px var(--box-shadow-color);
- }
-
- .nav-list li {
-   font-family: var(--rob-family);
  }
 
  .nav-list li a {
@@ -153,7 +148,7 @@ svg.burger-icon {
     height:auto;
 }
 
-/* main-hero section */
+/* MAIN HERO SECTION */
 .hero-container{
     width: 100%;
     margin: 0 auto;
@@ -170,7 +165,6 @@ svg.burger-icon {
     background-size:cover;
     background-position: center;
 }
-
 
 .follow{
     font-family: var(--char-family);
