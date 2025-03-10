@@ -118,7 +118,22 @@
                             <!-- Wrapper for carousel items -->
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <div class="img-box"><img src="/examples/images/clients/1.jpg" alt=""></div>
+                                    <div class="img-box">
+                                        <picture>
+                                            <source srcset="./images/test1-mobile.avif 200w" media="(max-width: 600px)"
+                                                type="image/avif">
+                                            <source srcset="./images/test1-tablet.avif 400w" media="(max-width: 1024px)"
+                                                type="image/avif">
+                                            <source srcset="./images/test1-desktop.avif 600w"
+                                                media="(min-width: 1025px)" type="image/avif">
+
+                                            <!-- Fallback JPEG optimizat cu MozJPEG -->
+                                            <img src="./images/test1-fallmobile.jpg" srcset="./images/test1-fallmobile.jpg 200w,
+                                                     ./images/test1-falltablet.jpg 400w,
+                                                     ./images/test1-falldesktop.jpg 600w" alt="Testimonial 1"
+                                                loading="lazy">
+                                        </picture>
+                                    </div>
                                     <p class="testimonial">"Multumim mult pentru fotografii si pentru caldura cu care
                                         ne-ati
                                         intampinat de fiecare data. Fotografiile sunt foarte
