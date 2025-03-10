@@ -175,16 +175,16 @@ svg.burger-icon {
 }
 .hero-media{
     display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-        gap: 10px;
-        background-color: var(--box-shadow-color);
-        border-width: 3px;
-        box-shadow: 1px 2px 4px 3px rgba(15, 13, 13, 0.2);
-        border-radius: 10px;
-        max-width: 350px;
-        margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--box-shadow-color);
+    border-width: 3px;
+    box-shadow: 1px 2px 4px 3px rgba(15, 13, 13, 0.2);
+    border-radius: 30px;
+    max-width: 350px;
+    margin: 20px auto;
+    height: 40px;
 }
 
 /* About */
@@ -204,19 +204,8 @@ svg.burger-icon {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #f9f9f9;
 }
-
-
-/* .about-background{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    border-radius: 10px;
-} */
 
 .about-image {
     width: 100%;
@@ -266,6 +255,127 @@ svg.burger-icon {
     color: #333;
 }
 
+/* Testimonial section */
+
+.testimonial-section {
+    background: #f9f9f9;
+    padding-top:30px;
+    padding-bottom: 70px;
+ }
+
+ .testimonial-section h2 {
+     color: #333;
+     text-align: center;
+     text-transform: uppercase;
+     font-family: "Roboto", sans-serif;
+     font-weight: bold;
+     position: relative;
+     margin: 30px 0 60px;
+ }
+
+ .testimonial-section h2::after {
+     content: "";
+     width: 100px;
+     position: absolute;
+     margin: 0 auto;
+     height: 3px;
+     background: var(--border-color);
+     left: 0;
+     right: 0;
+     bottom: -10px;
+ }
+
+ .col-center {
+     margin: 0 auto;
+     float: none !important;
+ }
+
+ .carousel {
+     padding: 0 70px;
+ }
+
+ .carousel .carousel-item {
+     color: #999;
+     font-size: 14px;
+     text-align: center;
+     overflow: hidden;
+     min-height: 290px;
+ }
+
+ .carousel .carousel-item .img-box {
+     width: 135px;
+     height: 135px;
+     margin: 0 auto;
+     padding: 5px;
+     border: 1px solid #ddd;
+     border-radius: 50%;
+ }
+
+ .carousel .img-box img {
+     width: 100%;
+     height: 100%;
+     display: block;
+     border-radius: 50%;
+ }
+
+ .carousel .testimonial {
+     padding: 30px 0 10px;
+ }
+
+ .carousel .overview {
+     font-style: italic;
+ }
+
+ .carousel .overview b {
+     text-transform: uppercase;
+     color: var(--dark-brown);
+ }
+
+ .carousel-control-prev,
+ .carousel-control-next,
+ .carousel-control-last {
+     width: 40px;
+     height: 40px;
+     margin-top: -20px;
+     top: 50%;
+     background: none;
+ }
+
+ .carousel-control-prev i,
+ .carousel-control-next i,
+ .carousel-control-last i {
+     font-size: 68px;
+     line-height: 42px;
+     position: absolute;
+     display: inline-block;
+     color: rgba(0, 0, 0, 0.8);
+     text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+ }
+
+ .carousel-indicators {
+     bottom: -40px;
+ }
+
+ .carousel-indicators li,
+ .carousel-indicators li.active {
+     width: 12px;
+     height: 12px;
+     margin: 1px 3px;
+     border-radius: 50%;
+     border: none;
+ }
+
+ .carousel-indicators li {
+     background: #999;
+     border-color: transparent;
+     box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
+ }
+
+ .carousel-indicators li.active {
+     background: #555;
+     box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
+ }
+
 /* footer section */
 
 footer{
@@ -294,6 +404,12 @@ footer{
          .hero{
             background-image: url('../images/hero-tablet.avif');
          }
+    .follow{
+        font-size: 21px;
+    }
+    .hero-media{
+        height: 50px;
+    }
 
          .about-container{
             max-width: 768px;
@@ -309,6 +425,9 @@ footer{
         .about-title{
         padding: 0px 30px;
          }
+    .testimonial-section{
+        padding-bottom: 60px;
+    }
          .footer-container{
              padding: 10px 10px;
          }
@@ -361,7 +480,6 @@ footer{
         background-image: url('../images/hero-dektop.avif');
     }
     .about-container {
-        margin-top: 50px;
         margin-bottom: 50px;
         }
     .footer-container{
