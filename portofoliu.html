@@ -52,28 +52,75 @@
             <h2 class="offer-title">Portofoliu</h2>
             <section class="packages">
                 <div class="package">
-                    <img src="./images/toa-heftiba-vgFmPHBOJ5w-unsplash.jpg" alt="Galerie 1">
+                    <picture>
+                        <!-- Versiunea AVIF pentru fiecare dimensiune -->
+                        <source srcset="./images/m-porto-mobile.avif 600w" media="(max-width: 600px)" type="image/avif">
+                        <source srcset="./images/m-porto-tablet.avif 800w" media="(max-width: 1024px)"
+                            type="image/avif">
+                        <source srcset="./images/m-porto-desktop.avif 1200w" media="(min-width: 1025px)"
+                            type="image/avif">
+                        <!-- Imaginea JPEG de fallback pentru browserele care nu acceptă AVIF -->
+                        <img src="./images/m-porto-falldesktop.jpg" srcset="./images/m-porto-fallmobile.jpg 600w,
+                                     ./images/m-porto-falltablet.jpg 800w,
+                                     ./images/m-porto-falldesktop.jpg 1200w"
+                            sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 40vw" alt="Portofoliu"
+                            loading="lazy">
+
+                    </picture>
                     <div class="package-content">
                         <h2>Maternitate</h2>
                         <button onclick="window.location.href='detalii-basic.html'">Vezi Detalii</button>
                     </div>
                 </div>
                 <div class="package">
-                    <img src="./images/janko-ferlic-ZNVGL_Pcf74-unsplash.jpg" alt="Galerie 2">
+                    <picture>
+                        <!-- Versiunea AVIF pentru fiecare dimensiune -->
+                        <source srcset="./images/new-porto-mobile.avif 600w,
+                                    ./images/new-porto-tablet.avif 800w,
+                                    ./images/new-porto-desktop.avif 1200w" type="image/avif">
+                        <!-- Imaginea JPEG de fallback pentru browserele care nu acceptă AVIF -->
+                        <img class="porto-card-image" src="./images/new-porto-falldesktop.jpg" srcset="
+                            ./images/new-porto-fallmobile.jpg 600w, ./images/new-porto-falltablet.jpg 800w,
+                            ./images/new-porto-falldesktop.jpg 1200w"
+                            sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 40vw" alt="Portofoliu"
+                            loading="lazy">
+                    </picture>
                     <div class="package-content">
                         <h2>Newborn</h2>
                         <button onclick="window.location.href='detalii-premium.html'">Vezi Detalii</button>
                     </div>
                 </div>
                 <div class="package">
-                    <img src="./images/janko-ferlic-ZNVGL_Pcf74-unsplash.jpg" alt="Galerie 3">
+                    <picture>
+                        <!-- Versiunea AVIF pentru fiecare dimensiune -->
+                        <source srcset="./images/new-porto-mobile.avif 600w,
+                                                        ./images/new-porto-tablet.avif 800w,
+                                                        ./images/new-porto-desktop.avif 1200w" type="image/avif">
+                        <!-- Imaginea JPEG de fallback pentru browserele care nu acceptă AVIF -->
+                        <img class="porto-card-image" src="./images/new-porto-falldesktop.jpg" srcset="
+                                                ./images/new-porto-fallmobile.jpg 600w, ./images/new-porto-falltablet.jpg 800w,
+                                                ./images/new-porto-falldesktop.jpg 1200w"
+                            sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 40vw" alt="Portofoliu"
+                            loading="lazy">
+                    </picture>
                     <div class="package-content">
                         <h2>Aniversare</h2>
                         <button onclick="window.location.href='detalii-deluxe.html'">Vezi Detalii</button>
                     </div>
                 </div>
                 <div class="package">
-                    <img src="./images/janko-ferlic-ZNVGL_Pcf74-unsplash.jpg" alt="Galerie 4">
+                    <picture>
+                        <!-- Versiunea AVIF pentru fiecare dimensiune -->
+                        <source srcset="./images/new-porto-mobile.avif 600w,
+                                                        ./images/new-porto-tablet.avif 800w,
+                                                        ./images/new-porto-desktop.avif 1200w" type="image/avif">
+                        <!-- Imaginea JPEG de fallback pentru browserele care nu acceptă AVIF -->
+                        <img class="porto-card-image" src="./images/new-porto-falldesktop.jpg" srcset="
+                                                ./images/new-porto-fallmobile.jpg 600w, ./images/new-porto-falltablet.jpg 800w,
+                                                ./images/new-porto-falldesktop.jpg 1200w"
+                            sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 40vw" alt="Portofoliu"
+                            loading="lazy">
+                    </picture>
                     <div class="package-content">
                         <h2>Eveniment</h2>
                         <button onclick="window.location.href='detalii-deluxe.html'">Vezi Detalii</button>
@@ -106,7 +153,7 @@
     </footer>
     <script src="./js/menuburger.js"></script>
     <!-- <script src="./java/nocopy.js"></script> -->
-    <script src="./js/clickalert.js"></script>
+    <!-- <script src="./js/clickalert.js"></script> -->
 </body>
 
 </html>
