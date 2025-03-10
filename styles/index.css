@@ -170,21 +170,26 @@ svg.burger-icon {
 }
 
 .follow{
-    font-family: var(--char-family);
     font-size: 18px;
+    font-family: var(--char-family);
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
 }
+
 .hero-media{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    background-color: var(--box-shadow-color);
-    border-width: 3px;
-    box-shadow: 1px 2px 4px 3px rgba(15, 13, 13, 0.2);
-    border-radius: 30px;
-    max-width: 350px;
-    margin: 20px auto;
-    height: 40px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color: #f9f9f9;
+        border-width: 3px;
+        box-shadow: 2px 3px 5px 3px rgb(0 0 0 / 20%);
+        border-radius: 30px;
+        max-width: 350px;
+        margin: 40px auto;
+        height: 40px;
 }
 
 /* About */
