@@ -81,6 +81,7 @@ img,a,p,span,div {
 .header-container {
     position: fixed;
     z-index: 1000;
+    margin:0 auto;
     background-color: white;
     width: 100%;
     max-width: 100%;
@@ -99,16 +100,18 @@ img,a,p,span,div {
      width: 100%;
      background-color: white;
      position: absolute;
-     top: 10px;
      padding: 20px 20px;
+     top:-12px;
      gap:20px;
      z-index: 1;
      left: 50%;
      height: 100vh;
      box-shadow: 0px 3px 5px 2px var(--box-shadow-color);
-    
  }
 
+ .home-page .nav-list{
+    top:2px;
+ }
  .nav-list li a {
     transition: color 0.3s ease;
     font-family: var(--char-family);
@@ -152,7 +155,7 @@ img,a,p,span,div {
      align-items: center;
      background-color: white;
      position: absolute;
-     top: 80px;
+     top: 100px;
      width: 50%;
      z-index: 1;
  }
