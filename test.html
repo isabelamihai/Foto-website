@@ -4,14 +4,64 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Bootstrap Testimonial Carousel</title>
-    <style>
-
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Raleway:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&family=Titan+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Card</title>
+    <link rel="stylesheet" href="./styles/test.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/maternity.css">
+    <link rel="stylesheet" href="./styles/index.css">
 </head>
 
 <body>
-
+    <div class="main">
+        <ul class="cards">
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image">
+                        <picture class="m-container">
+                            <!-- Versiunea AVIF pentru fiecare dimensiune -->
+                            <source
+                                srcset="
+                                                                                                ./images/maternity-mobile.avif 400w, 
+                                                                                                ./images/maternity-tablet.avif 800w, 
+                                                                                                ./images/maternity-desktop.avif 1200w"
+                                type="image/avif">
+                            <!-- Imaginea JPEG de fallback -->
+                            <img class="maternity-image" src="./images/maternity-desktopfall.jpg"
+                                srcset="
+                                                                                                ./images/maternity-mobilefall.jpg 400w, 
+                                                                                                ./images/maternity-tabletfall.jpg 800w, 
+                                                                                                ./images/maternity-desktopfall.jpg 1200w"
+                                sizes="(max-width: 600px) 400px, (max-width: 1024px) 800px, 1200px"
+                                alt="Maternity Photography">
+                        </picture>
+                        <span class="card_price"><span></span>600lei</span>
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">Consta in:</h2>
+                        <div class="card_text">
+                            <p>30 de cadre editate in format digital</p>
+                            <hr />
+                            <p>Durata sedinta: 60 de minute</p>
+                            <hr />
+                            <p>3 decoruri </p>
+                            <hr />
+                            <p>Tinute asigurate de studio</p>
+                            <hr />
+                            <p>Termen de predare: cca 10 zile</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
 </body>
 
 </html>

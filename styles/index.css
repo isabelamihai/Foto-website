@@ -219,9 +219,9 @@ svg.burger-icon {
     max-width: 350px;
     margin: 0 auto;
     text-align: center;
-    border-radius: 200px;
+    border-radius:0.25rem;
     border-width: 3px;
-    box-shadow: 3px 3px 6px 4px rgba(11, 9, 9, 0.1);
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
     margin-top: 20px;
     margin-bottom: 20px;
     color: #333;
@@ -239,7 +239,7 @@ svg.burger-icon {
     height: auto;
     object-fit: cover;
     margin: 0;
-    border-radius: 300px;
+    border-radius: 50%;
 }
 
 .about-content{
@@ -286,6 +286,11 @@ svg.burger-icon {
     background: var(--grey-color);
     padding-top:30px;
     padding-bottom: 70px;
+ }
+ .container-xl{
+    width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
  }
 
  .testimonial-section h2 {
@@ -466,6 +471,9 @@ text-decoration:none;
     .testimonial-section{
         padding-bottom: 60px;
     }
+    .container-xl{
+        max-width: 800px;
+    }
          .footer-container{
              padding: 10px 10px;
              font-size:16px;
@@ -544,4 +552,8 @@ text-decoration:none;
     .h2{
         font-size:30px;
     }
-}
+         .container-xl {
+             max-width: 1200px;
+
+         }
+        }
