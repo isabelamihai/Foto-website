@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const imgSrc = item.getAttribute("data-full");
             lightboxImg.src = imgSrc;
             lightbox.style.display = "flex";
+            console.log(lightbox.style.display); // Add this line
             currentImageIndex = index;
         });
         item.addEventListener("touchstart", function () {
@@ -24,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const imgSrc = item.getAttribute("data-full");
             lightboxImg.src = imgSrc;
             lightbox.style.display = "flex";
+            console.log(lightbox.style.display); // Add this line
             currentImageIndex = index;
         });
     });
