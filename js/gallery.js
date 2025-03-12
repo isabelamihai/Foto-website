@@ -1,27 +1,30 @@
+console.log("script loaded");
 document.addEventListener("DOMContentLoaded", function () {
+    console.log("DOMContentLoaded fired");
+
     const galleryItems = document.querySelectorAll(".gallery-item");
     const lightbox = document.querySelector(".lightbox");
     const lightboxImg = document.querySelector(".lightbox-img");
     const closeBtn = document.querySelector(".close");
     const prevButton = document.querySelector('.lightbox .prev');
     const nextButton = document.querySelector('.lightbox .next');
-    
+
     let currentImageIndex = 0;
     const images = Array.from(galleryItems).map(item => item.getAttribute("data-full"));
 
     galleryItems.forEach((item, index) => {
         item.addEventListener("click", function () {
             const imgSrc = item.getAttribute("data-full");
-            lightboxImg.src = imgSrc;  // Actualizăm sursa imaginii din lightbox
+            lightboxImg.src = imgSrc;
             lightbox.style.display = "flex";
-            currentImageIndex = index;  // Setăm indexul imaginii curente
+            currentImageIndex = index;
         });
         item.addEventListener("touchstart", function () {
-            console.log("Gallery item touchstart fired!"); // Add this line
+            console.log("Gallery item touchstart fired!");
             const imgSrc = item.getAttribute("data-full");
-            lightboxImg.src = imgSrc;  // Actualizăm sursa imaginii din lightbox
+            lightboxImg.src = imgSrc;
             lightbox.style.display = "flex";
-            currentImageIndex = index;  // Setăm indexul imaginii curente
+            currentImageIndex = index;
         });
     });
 
@@ -29,44 +32,41 @@ document.addEventListener("DOMContentLoaded", function () {
         lightbox.style.display = "none";
     });
 
-    // Închidere lightbox la click în afara imaginii
     lightbox.addEventListener("click", function (e) {
         if (e.target !== lightboxImg) {
             lightbox.style.display = "none";
         }
     });
 
-    // Funcție pentru a merge la imaginea precedentă
     function prevImage() {
         currentImageIndex = (currentImageIndex === 0) ? images.length - 1 : currentImageIndex - 1;
-        lightboxImg.src = images[currentImageIndex];  // Actualizăm sursa imaginii pentru prev
+        lightboxImg.src = images[currentImageIndex];
     }
 
-    // Funcție pentru a merge la imaginea următoare
     function nextImage() {
         currentImageIndex = (currentImageIndex === images.length - 1) ? 0 : currentImageIndex + 1;
-        lightboxImg.src = images[currentImageIndex];  // Actualizăm sursa imaginii pentru next
+        lightboxImg.src = images[currentImageIndex];
     }
 
     prevButton.addEventListener('click', function (e) {
-        e.stopPropagation(); // Previne închiderea lightbox-ului când dai click pe prev
+        e.stopPropagation();
         prevImage();
     });
+
     nextButton.addEventListener('click', function (e) {
-        e.stopPropagation(); // Previne închiderea lightbox-ului când dai click pe next
+        e.stopPropagation();
         nextImage();
     });
 
-    // Adaugă touch events pentru butoanele prev și next, pentru mobil
     prevButton.addEventListener('touchstart', function (e) {
         console.log("prevButton touchstart fired!");
-        e.stopPropagation(); 
+        e.stopPropagation();
         prevImage();
     });
 
     nextButton.addEventListener('touchstart', function (e) {
-         console.log("nextButton touchstart fired!");
-        e.stopPropagation(); 
+        console.log("nextButton touchstart fired!");
+        e.stopPropagation();
         nextImage();
     });
 });
