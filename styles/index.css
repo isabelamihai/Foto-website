@@ -1,7 +1,8 @@
 :root{
     --char-family:"Charmonman", sans-serif;
     --rob-family: "Roboto", sans-serif;
-    --footer-color: #FEFDF0;
+    --footer-color: #eee3d3;
+    --grey-color:#f9f9f9;
     --border-color:#d8a47f;
     --dark-brown:#836047;
     --box-shadow-color:rgb(250, 238, 218);
@@ -9,12 +10,15 @@
 
 }
 
-*{
+* {
     box-sizing: border-box;
 }
-
 body {
     font-family: var(--rob-family);
+}
+
+html, body {
+    overflow-x: hidden;
 }
 
 a {
@@ -76,8 +80,13 @@ img,a,p,span,div {
 .header-container {
     position: fixed;
     z-index: 1000;
+    top:0;
+    left:0;
+    margin:0;
+    padding:0;
     background-color: white;
     width: 100%;
+    max-width: 100%;
     height:100px;
     display: flex;
     justify-content: center;
@@ -183,7 +192,7 @@ svg.burger-icon {
         justify-content: center;
         align-items: center;
         gap: 10px;
-        background-color: #f9f9f9;
+        background-color:var(--grey-color);
         border-width: 3px;
         box-shadow: 2px 3px 5px 3px rgb(0 0 0 / 20%);
         border-radius: 30px;
@@ -209,7 +218,7 @@ svg.burger-icon {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #f9f9f9;
+    background-color:var(--footer-color);
 }
 
 .about-image {
@@ -263,7 +272,7 @@ svg.burger-icon {
 /* Testimonial section */
 
 .testimonial-section {
-    background: #f9f9f9;
+    background: var(--grey-color);
     padding-top:30px;
     padding-bottom: 70px;
  }
@@ -383,7 +392,7 @@ svg.burger-icon {
 /* footer section */
 
 footer{
-    background-color: var(--box-shadow-color);
+    background-color: var(--footer-color);
     border-width: 3px;
     box-shadow: 0 2px 5px 3px rgba(29, 25, 25, 0.1);
     text-align: center;

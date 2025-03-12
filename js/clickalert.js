@@ -1,6 +1,11 @@
 document.addEventListener('contextmenu', function(event) {
     event.preventDefault();
     alert("Click dreapta este dezactivat. Toate drepturile sunt rezervate.");
+
+    let style = window.getComputedStyle(event.target);
+    if (style.backgroundImage !== "none") {
+        alert("Click dreapta este dezactivat pe imagini.");
+    }
 });
 
 document.addEventListener('copy', function(event) {
@@ -13,11 +18,7 @@ document.addEventListener('dragstart', function(event) {
     alert("Drag and drop este dezactivat. Toate drepturile sunt rezervate.");
 });
 
-let style = window.getComputedStyle(event.target);
-    if (style.backgroundImage !== "none") {
-        event.preventDefault();
-        alert("Click dreapta este dezactivat. Toate drepturile sunt rezervate.");
-    }
-
-document.querySelectorAll('img').forEach(img => img.setAttribute('draggable', 'false'));
-document.querySelectorAll('a').forEach(a => a.setAttribute('draggable', 'false'));
+// Dezactivează drag pentru imagini și link-uri
+document.querySelectorAll('img, a').forEach(el => el.setAttribute('draggable', 'false'));
+// Dezactivează selectarea textului
+document.body.style.userSelect = 'none';

@@ -1,5 +1,6 @@
 .privacy-section ul{
     list-style-type:circle;
+    padding-left: inherit;
 }
 .privacy-section h3{
     font-family: var(--char-family);

@@ -39,28 +39,26 @@
 
 .maternity-image{
     width: 100%;
-    max-width: 350px;
-    padding: 20px 0px;
+    max-width: 250px;
+    padding-top:20px;
     height: auto;
     object-fit: cover;
     margin: 0;
 }
 
 .maternity-content{
-    background-color:var(--footer-color);
+    background-color: #f7f1ea;
     width: 100%;
     max-width: 400px;   
-    margin: 0 auto;
-    padding: 10px 0px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 10px 15px;
+    box-shadow: 3px 3px 6px 4px rgba(0, 0, 0, 0.1);
     border-width: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border-radius: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 @media (min-width: 768px){
@@ -76,7 +74,7 @@
             max-width: 800px;
         }
         .maternity-image{
-            max-width: 700px;
+            max-width: 600px;
         }
 }
 
@@ -92,6 +90,6 @@
         max-width: 1200px;
     }
     .maternity-image{
-        max-width: 100%;
+        max-width:900px;
     }
 }
