@@ -53,7 +53,20 @@
             <div class="maternity-container">
                 <h2 class="maternity-title">Pachet Newborn</h2>
                 <div class="maternity-content">
-                    <img src="./images/newborn-desktop.jpg" alt="Newborn Photography" class="newborn-img">
+                    <picture class="m-container">
+                        <!-- Versiunea AVIF pentru fiecare dimensiune -->
+                        <source srcset="
+                            ./images/new-offer-mobile.avif 400w, 
+                            ./images/new-offer-tablet.avif 800w, 
+                            ./images/new-offer-desktop.avif 1200w" type="image/avif">
+                        <!-- Imaginea JPEG de fallback -->
+                        <img class="maternity-image" src="./images/new-offer-falldesktop.jpg" srcset="
+                            ./images/new-offer-fallmobile.jpg 400w, 
+                            ./images/new-offer-falltablet.jpg 800w, 
+                            ./images/new-offer-falldesktop.jpg 1200w"
+                            sizes="(max-width: 600px) 400px, (max-width: 1024px) 800px, 1200px"
+                            alt="New Offer Photography">
+                    </picture>
                     <div class="maternity-text">
                         <ul>
                             <li>Sesiune foto nou-nascut: 600 de lei</li>

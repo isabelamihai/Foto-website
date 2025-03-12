@@ -53,7 +53,20 @@
             <div class="maternity-container">
                 <h2 class="maternity-title">Pachet Evenimente</h2>
                 <div class="maternity-content">
-                    <img src="./images/newborn-desktop.jpg" alt="Event Photography" class="event-img">
+                    <picture class="m-container">
+                        <!-- Versiunea AVIF pentru fiecare dimensiune -->
+                        <source srcset="
+                                ./images/event-offer-mobile.avif 400w, 
+                                ./images/event-offer-tablet.avif 800w, 
+                                ./images/event-offer-desktop.avif 1200w" type="image/avif">
+                        <!-- Imaginea JPEG de fallback -->
+                        <img class="maternity-image" src="./images/event-offer-falldesktop.jpg" srcset="
+                                ./images/event-offer-fallmobile.jpg 400w, 
+                                ./images/event-offer-falltablet.jpg 800w, 
+                                ./images/event-offer-falldesktop.jpg 1200w"
+                            sizes="(max-width: 600px) 400px, (max-width: 1024px) 800px, 1200px"
+                            alt="Event Offer Photography">
+                    </picture>
                     <div class="maternity-text">
                         <ul>
                             <li>Ceremonie religioasa: 800 DE LEI</li>
