@@ -14,20 +14,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     galleryItems.forEach((item, index) => {
         item.addEventListener("click", function () {
+            console.log("click");
+            const imgSrc = item.getAttribute("data-full");
+            lightboxImg.src = imgSrc;
+            lightbox.style.display = "flex";
+            currentImageIndex = index;
+        });
+        /*item.addEventListener("touchend", function () {
+              console.log("touchend");
             const imgSrc = item.getAttribute("data-full");
             lightboxImg.src = imgSrc;
             lightbox.style.display = "flex";
             console.log(lightbox.style.display); // Add this line
             currentImageIndex = index;
-        });
-        item.addEventListener("touchend", function () {
-            console.log("Gallery item touchstart fired!");
-            const imgSrc = item.getAttribute("data-full");
-            lightboxImg.src = imgSrc;
-            lightbox.style.display = "flex";
-            console.log(lightbox.style.display); // Add this line
-            currentImageIndex = index;
-        });
+        });*/
     });
 
     closeBtn.addEventListener("click", function () {
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
         nextImage();
     });
 
-    prevButton.addEventListener('touchend', function (e) {
+    /*prevButton.addEventListener('touchend', function (e) {
         console.log("prevButton touchstart fired!");
         e.stopPropagation();
         prevImage();
@@ -70,5 +70,5 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("nextButton touchstart fired!");
         e.stopPropagation();
         nextImage();
-    });
+    });*/
 });
