@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
             currentImageIndex = index;  // Setăm indexul imaginii curente
         });
         item.addEventListener("touchstart", function () {
+            console.log("Gallery item touchstart fired!"); // Add this line
             const imgSrc = item.getAttribute("data-full");
             lightboxImg.src = imgSrc;  // Actualizăm sursa imaginii din lightbox
             lightbox.style.display = "flex";
@@ -58,11 +59,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Adaugă touch events pentru butoanele prev și next, pentru mobil
     prevButton.addEventListener('touchstart', function (e) {
+        console.log("prevButton touchstart fired!");
         e.stopPropagation(); 
         prevImage();
     });
 
     nextButton.addEventListener('touchstart', function (e) {
+         console.log("nextButton touchstart fired!");
         e.stopPropagation(); 
         nextImage();
     });
