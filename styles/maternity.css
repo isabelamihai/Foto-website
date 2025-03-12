@@ -62,8 +62,8 @@
 
 @media (min-width: 768px){
     .maternity-container{
-        padding: 10px 30px;
-        max-width: 800px;
+        padding: 10px 0px;
+        max-width: 700px;
     }
         .maternity-text svg {
             width: 50px;
@@ -75,6 +75,9 @@
         .maternity-image{
             max-width: 600px;
         }
+        .maternity-title{
+            font-size: 24px;
+        }
 }
 
 @media (min-width: 1200px){
@@ -82,8 +85,8 @@
         padding-top: 0px;
     }
     .maternity-container{
-        padding: 30px 40px;
-        max-width: 1200px;
+        padding: 20px 0px;
+        max-width: 1000px;
     }
     .maternity-content{
         max-width: 1200px;
