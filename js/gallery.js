@@ -50,11 +50,12 @@ document.addEventListener("DOMContentLoaded", function () {
     prevButton.addEventListener('click', function (e) {
         e.stopPropagation(); // Previne închiderea lightbox-ului când dai click pe prev
         prevImage();
-    })
+    });
     nextButton.addEventListener('click', function (e) {
         e.stopPropagation(); // Previne închiderea lightbox-ului când dai click pe next
         nextImage();
-    })
+    });
+
     // Adaugă touch events pentru butoanele prev și next, pentru mobil
     prevButton.addEventListener('touchstart', function (e) {
         e.stopPropagation(); 
