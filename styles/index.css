@@ -488,7 +488,6 @@ text-decoration:none;
 
 /* Containerul headerului */
 .header-container { 
-    padding: 10px 0px;
     box-shadow:none;
     justify-content: flex-end;
     margin:0 auto;
@@ -518,10 +517,11 @@ text-decoration:none;
     font-size:18px;
 }
 
-.nax-list li{
-    padding: 10px 20px;
-    text-align: center;
+.home-page .nav-list li{
+    margin-top:inherit;
+    padding-top:13px;
 }
+
     .hero{
         height: 100vh;
         background-image: url('../images/hero-dektop.avif');
@@ -556,4 +556,6 @@ text-decoration:none;
              max-width: 1200px;
 
          }
-        }
+
+    
+}
