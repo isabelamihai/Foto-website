@@ -13,21 +13,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const images = Array.from(galleryItems).map(item => item.getAttribute("data-full"));
 
     galleryItems.forEach((item, index) => {
-        item.addEventListener("click", function () {
+        item.addEventListener("click", function (e) {
+            e.stopPropagation();
             console.log("click");
             const imgSrc = item.getAttribute("data-full");
             lightboxImg.src = imgSrc;
             lightbox.style.display = "flex";
             currentImageIndex = index;
         });
-        /*item.addEventListener("touchend", function () {
-              console.log("touchend");
-            const imgSrc = item.getAttribute("data-full");
-            lightboxImg.src = imgSrc;
-            lightbox.style.display = "flex";
-            console.log(lightbox.style.display); // Add this line
-            currentImageIndex = index;
-        });*/
+       
     });
 
     closeBtn.addEventListener("click", function () {
@@ -60,15 +54,4 @@ document.addEventListener("DOMContentLoaded", function () {
         nextImage();
     });
 
-    /*prevButton.addEventListener('touchend', function (e) {
-        console.log("prevButton touchstart fired!");
-        e.stopPropagation();
-        prevImage();
-    });
-
-    nextButton.addEventListener('touchend', function (e) {
-        console.log("nextButton touchstart fired!");
-        e.stopPropagation();
-        nextImage();
-    });*/
 });
