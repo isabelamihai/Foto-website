@@ -22,8 +22,9 @@ html, body {
 }
 
 a {
-    text-decoration: none;
+    text-decoration:none;
     color: inherit;
+    cursor: pointer;
 }
 
 ul {
@@ -80,10 +81,6 @@ img,a,p,span,div {
 .header-container {
     position: fixed;
     z-index: 1000;
-    top:0;
-    left:0;
-    margin:0;
-    padding:0;
     background-color: white;
     width: 100%;
     max-width: 100%;
@@ -109,13 +106,18 @@ img,a,p,span,div {
      left: 50%;
      height: 100vh;
      box-shadow: 0px 3px 5px 2px var(--box-shadow-color);
+    
  }
 
  .nav-list li a {
-     color: #333;
+    transition: color 0.3s ease;
+    font-family: var(--char-family);
+    text-decoration: none;
+    font-weight: 600;
  }
+
  .nav-list li a:hover {
-     color: #AD390E;
+     color: var(--border-color);
  }
 
 .logo-header {
@@ -199,6 +201,12 @@ svg.burger-icon {
         max-width: 350px;
         margin: 40px auto;
         height: 40px;
+        transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.hero-media:hover{
+    background-color: var(--footer-color);
+    transform: scale(1.1);
 }
 
 /* About */
@@ -402,6 +410,19 @@ footer{
     max-width: 400px;
     margin: 0 auto;
     padding: 10px 0;
+    font-family: var(--rob-family);
+    font-size:14px;
+}
+
+.footer-container a{
+transition: color 0.3s ease, transform 0.2s ease-in-out;
+text-decoration:none;
+}
+
+.footer-container a:hover{
+    color: var(--dark-brown);
+    fill:var(--dark-brown);
+    transform: scale(1.5);
 }
 
 /* Media queries pentru dimensiuni mai mici (de exemplu, pentru dispozitive mobile) */
@@ -444,6 +465,7 @@ footer{
     }
          .footer-container{
              padding: 10px 10px;
+             font-size:16px;
          }
         }      
 
@@ -498,6 +520,7 @@ footer{
         }
     .footer-container{
         padding: 10px 10px;
+        font-size:21px;
     }
     .hero-container{
         padding-top:0px;

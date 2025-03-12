@@ -56,11 +56,13 @@
         cursor: pointer;
         background-color: var(--border-color);
         color: #fff;
+        transition: background-color 0.3s ease, transform 0.2s ease-in-out;
     }
-
+        
     .contact-form button:hover, .contact-form button:focus{
         background-color:var(--dark-brown);
         color: #fff;
+        transform: translateY(-5px);
 
     }
     .contact-form input:focus, .contact-form textarea:focus{
