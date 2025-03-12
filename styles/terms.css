@@ -34,6 +34,9 @@
     margin: 0 auto;
     padding: 10px 20px;
 }
+.terms-section{
+    margin-bottom: 20px;
+}
 
 @media (min-width: 768px) {
     .terms-container {

@@ -16,6 +16,12 @@ document.addEventListener("DOMContentLoaded", function () {
             lightbox.style.display = "flex";
             currentImageIndex = index;  // Setăm indexul imaginii curente
         });
+        item.addEventListener("touchstart", function () {
+            const imgSrc = item.getAttribute("data-full");
+            lightboxImg.src = imgSrc;  // Actualizăm sursa imaginii din lightbox
+            lightbox.style.display = "flex";
+            currentImageIndex = index;  // Setăm indexul imaginii curente
+        });
     });
 
     closeBtn.addEventListener("click", function () {
@@ -49,4 +55,14 @@ document.addEventListener("DOMContentLoaded", function () {
         e.stopPropagation(); // Previne închiderea lightbox-ului când dai click pe next
         nextImage();
     })
+    // Adaugă touch events pentru butoanele prev și next, pentru mobil
+    prevButton.addEventListener('touchstart', function (e) {
+        e.stopPropagation(); 
+        prevImage();
+    });
+
+    nextButton.addEventListener('touchstart', function (e) {
+        e.stopPropagation(); 
+        nextImage();
+    });
 });
