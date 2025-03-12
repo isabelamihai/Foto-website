@@ -52,7 +52,7 @@
     max-width: 400px;   
     margin: 20px auto;
     padding: 10px 15px;
-    box-shadow: 3px 3px 6px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 3px 3px 2px rgba(215, 194, 170,0.1);
     border-width: 3px;
     display: flex;
     justify-content: center;
