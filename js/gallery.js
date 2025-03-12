@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log(lightbox.style.display); // Add this line
             currentImageIndex = index;
         });
-        item.addEventListener("touchstart", function () {
+        item.addEventListener("touchend", function () {
             console.log("Gallery item touchstart fired!");
             const imgSrc = item.getAttribute("data-full");
             lightboxImg.src = imgSrc;
@@ -60,13 +60,13 @@ document.addEventListener("DOMContentLoaded", function () {
         nextImage();
     });
 
-    prevButton.addEventListener('touchstart', function (e) {
+    prevButton.addEventListener('touchend', function (e) {
         console.log("prevButton touchstart fired!");
         e.stopPropagation();
         prevImage();
     });
 
-    nextButton.addEventListener('touchstart', function (e) {
+    nextButton.addEventListener('touchend', function (e) {
         console.log("nextButton touchstart fired!");
         e.stopPropagation();
         nextImage();
