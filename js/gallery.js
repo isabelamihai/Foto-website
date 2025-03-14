@@ -1,3 +1,6 @@
+console.log("Lightbox:", document.querySelector(".lightbox"));
+console.log("Gallery items:", document.querySelectorAll(".gallery-item"));
+
 window.addEventListener("load", function () {
     console.log("Window fully loaded");
 
