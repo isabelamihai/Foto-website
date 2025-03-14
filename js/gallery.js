@@ -14,6 +14,12 @@ window.addEventListener("load", function () {
     let currentImageIndex = 0;
     const images = Array.from(galleryItems).map(item => item.getAttribute("data-full"));
 
+    const counterElement = document.querySelector('.lightbox-counter');
+
+    function updateCounter() {
+    counterElement.textContent = `${currentImageIndex + 1} / ${images.length}`;
+    }
+
     galleryItems.forEach((item, index) => {
         item.addEventListener("click", function (e) {
             e.stopPropagation();
@@ -28,6 +34,8 @@ window.addEventListener("load", function () {
             lightboxImg.src = imgSrc;
             lightbox.style.display = "flex";
             currentImageIndex = index;
+
+            updateCounter(); 
         });
     });
 
@@ -44,11 +52,13 @@ window.addEventListener("load", function () {
     function prevImage() {
         currentImageIndex = (currentImageIndex === 0) ? images.length - 1 : currentImageIndex - 1;
         lightboxImg.src = images[currentImageIndex];
+        updateCounter();
     }
 
     function nextImage() {
         currentImageIndex = (currentImageIndex === images.length - 1) ? 0 : currentImageIndex + 1;
         lightboxImg.src = images[currentImageIndex];
+        updateCounter();
     }
 
     prevButton.addEventListener('click', function (e) {
