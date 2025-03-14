@@ -2,19 +2,19 @@ document.addEventListener('DOMContentLoaded', function () {
     // Dezactivează meniul click dreapta / long-press
     document.addEventListener('contextmenu', function (event) {
         event.preventDefault();
-        console.warn("Click dreapta este dezactivat. Toate drepturile sunt rezervate.");
+        alert("Click dreapta este dezactivat. Toate drepturile sunt rezervate.");
     });
 
     // Dezactivează funcția de copiere (CTRL+C, Copy din meniu)
     document.addEventListener('copy', function (event) {
         event.preventDefault();
-        console.warn("Copierea este dezactivată.");
+        alert("Copierea este dezactivată.");
     });
 
     // Dezactivează drag & drop pentru imagini și link-uri
     document.addEventListener('dragstart', function (event) {
         event.preventDefault();
-        console.warn("Drag and drop este dezactivat.");
+        alert("Drag and drop este dezactivat.");
     });
 
     document.querySelectorAll('img, a').forEach(el => el.setAttribute('draggable', 'false'));

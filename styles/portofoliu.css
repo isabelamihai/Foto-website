@@ -80,6 +80,10 @@
     .packages{
         max-width: 800px;
     }
+    .package{
+        width:500px;
+        height:500px;
+    }
  }
 
  @media (min-width:1200px) {
