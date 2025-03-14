@@ -57,7 +57,7 @@ h2 {
     transform: translateX(0);
 }
 
-img,a,p,span,div {
+img {
     user-select: none;
     -webkit-user-drag: none;
     -webkit-user-select: none;
