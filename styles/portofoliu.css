@@ -10,7 +10,7 @@
 
  .package {
      position: relative;
-     width: 400px;
+     width: 300px;
      height: 400px;
      border-radius: 8px;
      overflow: hidden;
@@ -81,8 +81,8 @@
         max-width: 800px;
     }
     .package{
-        width:500px;
-        height:500px;
+        width:450px;
+        height:450px;
     }
         .offer-title {
             font-size: 24px;
