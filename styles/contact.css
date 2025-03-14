@@ -14,7 +14,7 @@
 .contact-text{
         text-align: center;
         font-family:var(--rob-family);
-        font-size: 13px;
+        font-size: 15px;
     }
 
 .contact-form{
@@ -132,11 +132,11 @@
                 max-width: 800px;
             }
             .contact-title {
-            font-size:21px;
+            font-size:24px;
         }
 
         .contact-text{
-            font-size: 18px;
+            font-size: 20px;
         }
         .contact-form input{
             width: 600px;
@@ -160,10 +160,10 @@
                 }
 
         .contact-title {
-            font-size:24px;
+            font-size:30px;
         }
         .contact-text{
-            font-size: 21px;
+            font-size: 24px;
         }
         .contact-form input{
             width: 800px;

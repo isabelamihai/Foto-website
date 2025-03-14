@@ -86,6 +86,9 @@
         width: 500px;
         height: 500px;
     }
+        .offer-title {
+            font-size:24px;
+        }
 }
 
 @media (min-width:1200px) {
@@ -96,4 +99,7 @@
         .offers {
             padding-top: 0px;
         }
+        .offer-title {
+         font-size: 30px;
+                }
 }
