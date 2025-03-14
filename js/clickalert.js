@@ -22,10 +22,10 @@ document.addEventListener('DOMContentLoaded', function () {
     // Dezactivează selectarea textului
     document.documentElement.style.userSelect = 'none';
 
-    // Dezactivează long-press pe mobil pentru imagini
-    document.querySelectorAll('img').forEach(img => {
-        img.addEventListener('touchstart', function (event) {
-            event.preventDefault();
-        }, { passive: false });
-    });
+    // // Dezactivează long-press pe mobil pentru imagini
+    // document.querySelectorAll('img').forEach(img => {
+    //     img.addEventListener('touchstart', function (event) {
+    //         event.preventDefault();
+    //     }, { passive: false });
+    // });
 });
