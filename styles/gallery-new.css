@@ -103,6 +103,9 @@
     .gallery {
         width: 700px;
     }
+    .gallery img {
+        max-width: 450px;
+    }
 }
 
 @media (min-width: 1200px) {
