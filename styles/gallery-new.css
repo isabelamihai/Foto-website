@@ -103,10 +103,6 @@
     .gallery {
         width: 800px;
     }
-         .gallery-item {
-             width: 500px;
-         }
-    
          .gallery img {
              max-width: 500px;
          }
@@ -119,13 +115,9 @@
     .gallery-section .gallery-title{
         padding-top:30px;
     }
-         .gallery-item {
-             width: 600px;
-         }
-    
-         .gallery img {
-             max-width: 600px;
-         }
+    .gallery-img{
+        max-width: 600px;
+    }
     footer{
         margin-top:auto;
     }
