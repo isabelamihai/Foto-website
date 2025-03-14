@@ -1,6 +1,5 @@
-console.log("script loaded");
-document.addEventListener("DOMContentLoaded", function () {
-    console.log("DOMContentLoaded fired");
+window.addEventListener("load", function () {
+    console.log("Window fully loaded");
 
     const galleryItems = document.querySelectorAll(".gallery-item");
     const lightbox = document.querySelector(".lightbox");
@@ -15,13 +14,18 @@ document.addEventListener("DOMContentLoaded", function () {
     galleryItems.forEach((item, index) => {
         item.addEventListener("click", function (e) {
             e.stopPropagation();
-            console.log("click");
+            console.log("Imagine apăsată:", item.getAttribute("data-full"));
             const imgSrc = item.getAttribute("data-full");
+
+            if (!imgSrc) {
+                console.error("Imagine lipsă pentru index:", index);
+                return;
+            }
+
             lightboxImg.src = imgSrc;
             lightbox.style.display = "flex";
             currentImageIndex = index;
         });
-       
     });
 
     closeBtn.addEventListener("click", function () {
@@ -53,5 +57,4 @@ document.addEventListener("DOMContentLoaded", function () {
         e.stopPropagation();
         nextImage();
     });
-
 });
