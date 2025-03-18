@@ -20,7 +20,7 @@
     justify-content: center;
     gap: 15px;
     max-width: 100%;
-    width: 100%;
+    width:100%;
     padding: 20px;
     margin:0 auto;
     box-sizing: border-box;
@@ -59,9 +59,10 @@
 }
 
 .lightbox img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 90%;
+    max-height: 90%;
     border-radius: 10px;
+    padding-top:120px;
 }
 
 .lightbox .close {
@@ -84,6 +85,7 @@
     border: none;
     cursor: pointer;
     z-index: 10001;
+    padding-top:120px;
 }
 
 .lightbox .prev {
@@ -117,8 +119,8 @@
         .gallery-title {
             font-size: 24px;
         }
-        .gallery img{
-            width:450px;
+        .gallery-item{
+            max-width: 400px;
         }
         .lightbox-counter {
         font-size: 15px;
@@ -138,10 +140,10 @@
         .gallery-title {
             font-size: 30px;
         }
+    .gallery-item{
+        max-width: 350px;
+    }
 
-        .gallery img{
-            max-width:350px;
-        }
     .lightbox img{
         padding-top:0px;
     }
