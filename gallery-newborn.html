@@ -153,6 +153,21 @@
                                 alt="Parintii si copilul" loading="lazy">
                         </picture>
                     </div>
+                    <div class="gallery-item" data-full="images/newborn-desktop.avif">
+                        <picture>
+                            <!-- Versiunea AVIF pentru fiecare dimensiune -->
+                            <source srcset="images/newborn-mobile.avif 400w, 
+                                            images/newborn-tablet.avif 800w, 
+                                            images/newborn-desktop.avif 1200w" type="image/avif">
+
+                            <!-- Imaginea JPEG de fallback pentru browserele care nu acceptă AVIF -->
+                            <img src="images/newborn-falldesktop.jpg" srcset="images/newborn-fallmobile.jpg 400w, 
+                                    images/newborn-falltablet.jpg 800w, 
+                                    images/newborn-falldesktop.jpg 1200w"
+                                sizes="(max-width: 600px) 400px, (max-width: 1024px) 800px, (max-width:1025px)1200px"
+                                alt="Parintii si copilul" loading="lazy">
+                        </picture>
+                    </div>
                 </div>
 
                 <!-- Lightbox -->
