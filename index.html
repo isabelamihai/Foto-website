@@ -80,14 +80,15 @@
                 <picture class="image-container">
                     <!-- Versiunea AVIF pentru fiecare dimensiune -->
                     <source srcset="images/about-mobile.avif 800w,
-                        images/about-tablet.avif 1200w,
-                        images/about-desktop.avif 2000w" type="image/avif">
+                                images/about-tablet.avif 1200w,
+                                images/about-desktop.avif 2000w" type="image/avif">
+
                     <!-- Imaginea JPEG de fallback pentru browserele care nu acceptă AVIF -->
-                    <img class="about-image" src="./images/about-desktopfall.jpg" srcset="images/about-mobilefall.jpg 800w,
-                             images/about-tabletfall.jpg 1200w,
-                            images/about-desktopfall.jpg 2000w"
-                        sizes="(max-width: 600px) 800px, (max-width: 1024px) 1200px, 2000px" alt="Poza Laura Dan"
-                        loading="lazy">
+                    <img class="about-image" src="images/about-desktopfall.jpg" srcset="images/about-mobilefall.jpg 800w,
+                           images/about-tabletfall.jpg 1200w,
+                           images/about-desktopfall.jpg 2000w" sizes="(max-width: 600px) 800px, 
+                           (max-width: 1024px) 1200px, 
+                           (min-width: 1025px) 2000px" alt="Poza Laura Dan">
                 </picture>
                 <h2 class=" about-title text-container">
                     "Salutare, sunt Laura, fotograful tău pentru momente de neuitat."
