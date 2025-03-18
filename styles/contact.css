@@ -120,11 +120,19 @@
         font-size: 16px;
         margin-bottom: 10px;
         font-family:var(--char-family);
-        color: #836047;
+        color: var(--dark-brown);
         font-weight:600 ;
 
     }
 
+    .contact-info .social-media{
+        transition: transform 0.2s ease-in;
+        fill:var(--dark-brown);
+        stroke:var(--dark-brown);
+    }
+    .contact-info .social-media:hover {
+        transform:scale(1.5);
+    }
         /* TABLETE */
          @media (min-width:768px) {
             .contact-container {

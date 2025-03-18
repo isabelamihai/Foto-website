@@ -79,14 +79,15 @@
             <div class="about-container">
                 <picture class="image-container">
                     <!-- Versiunea AVIF pentru fiecare dimensiune -->
-                    <source srcset="./images/about-mobile.avif 800w,
-                        ./images/about-tablet.avif 1200w,
-                        ./images/about-desktop.avif 2000w" type="image/avif">
+                    <source srcset="images/about-mobile.avif 800w,
+                        images/about-tablet.avif 1200w,
+                        images/about-desktop.avif 2000w" type="image/avif">
                     <!-- Imaginea JPEG de fallback pentru browserele care nu acceptă AVIF -->
-                    <img class="about-image" src="./images/about-desktopfall.jpg" srcset="./images/about-mobilefall.jpg 800w,
-                             ./images/about-tabletfall.jpg 1200w,
-                            ./images/about-desktopfall.jpg 2000w"
-                        sizes="(max-width: 600px) 800px, (max-width: 1024px) 1200px, 2000px" alt="Poza Laura Dan">
+                    <img class="about-image" src="./images/about-desktopfall.jpg" srcset="images/about-mobilefall.jpg 800w,
+                             images/about-tabletfall.jpg 1200w,
+                            images/about-desktopfall.jpg 2000w"
+                        sizes="(max-width: 600px) 800px, (max-width: 1024px) 1200px, 2000px" alt="Poza Laura Dan"
+                        loading="lazy">
                 </picture>
                 <h2 class=" about-title text-container">
                     "Salutare, sunt Laura, fotograful tău pentru momente de neuitat."
@@ -126,18 +127,17 @@
                                 <div class="carousel-item active">
                                     <div class="img-box">
                                         <picture>
-                                            <source srcset="./images/test1-mobile.avif 200w" media="(max-width: 600px)"
-                                                type="image/avif">
-                                            <source srcset="./images/test1-tablet.avif 400w" media="(max-width: 1024px)"
-                                                type="image/avif">
-                                            <source srcset="./images/test1-desktop.avif 600w"
-                                                media="(min-width: 1025px)" type="image/avif">
+                                            <source srcset="images/test1-mobile.avif 200w,
+                                             images/test1-tablet.avif 400w,
+                                             images/test1-desktop.avif 600w" type="image/avif">
 
                                             <!-- Fallback JPEG optimizat cu MozJPEG -->
-                                            <img src="./images/test1-fallmobile.jpg" srcset="./images/test1-fallmobile.jpg 200w,
-                                                     ./images/test1-falltablet.jpg 400w,
-                                                     ./images/test1-falldesktop.jpg 600w" alt="Testimonial 1"
+                                            <img src="images/test1-fallmobile.jpg" srcset="images/test1-fallmobile.jpg 200w,
+                                                     images/test1-falltablet.jpg 400w,
+                                                     images/test1-falldesktop.jpg 600w" alt="Testimonial 1"
+                                                sizes="(max-width: 600px) 200px, (max-width: 1024px) 400px, 600px"
                                                 loading="lazy">
+
                                         </picture>
                                     </div>
                                     <p class="testimonial">"Multumim mult pentru fotografii si pentru caldura cu care
@@ -150,15 +150,13 @@
                                 <div class="carousel-item">
                                     <div class="img-box">
                                         <picture>
-                                            <source srcset="./images/test2-mobile.avif 200w" media="(max-width: 600px)"
-                                                type="image/avif">
-                                            <source srcset="./images/test2-tablet.avif 400w" media="(max-width: 1024px)"
-                                                type="image/avif"> <!-- Versiunea AVIF pentru desktop -->
-                                            <source srcset="./images/test2-desktop.avif 600w"
-                                                media="(min-width: 1025px)" type="image/avif">
-                                            <img src="./images/test2-fallmobile.jpg" srcset="./images/test2-fallmobile.jpg 200w,
-                                                         ./images/test2-falltablet.jpg 400w,
-                                                         ./images/test2-falldesktop.jpg 600w" alt="Testimonial 2"
+                                            <source srcset="images/test2-mobile.avif 200w,
+                                            images/test2-tablet.avif 400w,
+                                            images/test2-desktop.avif 600w" type="image/avif">
+                                            <img src="images/test2-fallmobile.jpg" srcset="images/test2-fallmobile.jpg 200w,
+                                                         images/test2-falltablet.jpg 400w,
+                                                         images/test2-falldesktop.jpg 600w" alt="Testimonial 2"
+                                                sizes="(max-width: 600px) 200px, (max-width: 1024px) 400px, 600px"
                                                 loading="lazy">
                                         </picture>
                                     </div>
@@ -192,15 +190,13 @@
                                 <div class="carousel-item">
                                     <div class="img-box">
                                         <picture>
-                                            <source srcset="./images/test3-mobile.avif 200w" media="(max-width: 600px)"
-                                                type="image/avif">
-                                            <source srcset="./images/test3-tablet.avif 400w" media="(max-width: 1024px)"
-                                                type="image/avif">
-                                            <source srcset="./images/test3-desktop.avif 600w"
-                                                media="(min-width: 1025px)" type="image/avif">
-                                            <img src="./images/test3-fallmobile.jpg" srcset="./images/test3-fallmobile.jpg 200w,
-                                                         ./images/test3-falltablet.jpg 400w,
-                                                         ./images/test3-falldesktop.jpg 600w" alt="Testimonial 3"
+                                            <source srcset="images/test3-mobile.avif 200w,
+                                             images/test3-tablet.avif 400w, 
+                                             images/test3-desktop.avif 600w" type="image/avif">
+                                            <img src="images/test3-fallmobile.jpg" srcset="images/test3-fallmobile.jpg 200w,
+                                                         images/test3-falltablet.jpg 400w,
+                                                         images/test3-falldesktop.jpg 600w" alt="Testimonial 3"
+                                                sizes="(max-width: 600px) 200px, (max-width: 1024px) 400px, 600px"
                                                 loading="lazy">
                                         </picture>
                                     </div>
@@ -213,15 +209,13 @@
                                 <div class="carousel-item">
                                     <div class="img-box">
                                         <picture>
-                                            <source srcset="./images/test4-mobile.avif 200w" media="(max-width: 600px)"
-                                                type="image/avif">
-                                            <source srcset="./images/test4-tablet.avif 400w" media="(max-width: 1024px)"
-                                                type="image/avif">
-                                            <source srcset="./images/test4-desktop.avif 600w"
-                                                media="(min-width: 1025px)" type="image/avif">
-                                            <img src="./images/test4-fallmobile.jpg" srcset="./images/test4-fallmobile.jpg 200w,
-                                                         ./images/test4-falltablet.jpg 400w,
-                                                         ./images/test4-falldesktop.jpg 600w" alt="Testimonial 4"
+                                            <source srcset="images/test4-mobile.avif 200w,
+                                            images/test4-tablet.avif 400w,
+                                            images/test4-desktop.avif 600w" type="image/avif">
+                                            <img src="images/test4-fallmobile.jpg" srcset="images/test4-fallmobile.jpg 200w,
+                                                    images/test4-falltablet.jpg 400w,
+                                                    images/test4-falldesktop.jpg 600w" alt="Testimonial 4"
+                                                sizes="(max-width: 600px) 200px, (max-width: 1024px) 400px, 600px"
                                                 loading="lazy">
                                         </picture>
                                     </div>
