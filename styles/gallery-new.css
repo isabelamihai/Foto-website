@@ -127,7 +127,7 @@
 
 @media (min-width: 1200px) {
     .gallery{
-        max-width: 1200px;
+        width: 1200px;
     }
     .gallery-section .gallery-title{
         padding-top:30px;
