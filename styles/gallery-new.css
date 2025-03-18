@@ -59,8 +59,8 @@
 }
 
 .lightbox img {
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 100%;
+    max-height: 100%;
     border-radius: 10px;
 }
 
@@ -117,6 +117,9 @@
         .gallery-title {
             font-size: 24px;
         }
+        .gallery img{
+            width:450px;
+        }
         .lightbox-counter {
         font-size: 15px;
         }
@@ -134,6 +137,10 @@
     }
         .gallery-title {
             font-size: 30px;
+        }
+
+        .gallery img{
+            max-width:350px;
         }
     .lightbox img{
         padding-top:0px;
