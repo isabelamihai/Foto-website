@@ -11,7 +11,7 @@
 
 .package {
     position: relative;
-    width: 300px;
+    width: 350px;
     height: 400px;
     border-radius: 8px;
     overflow: hidden;
@@ -43,7 +43,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 100%);
+    transform: translate(-50%, 70%);
     text-align: center;
     color: #fff;
     background-color: rgba(176, 163, 147, 0.673);
