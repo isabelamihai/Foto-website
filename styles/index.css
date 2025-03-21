@@ -184,16 +184,17 @@ svg.burger-icon {
     background-position: center;
 }
 
-.follow{
-    font-size: 18px;
+.socials .follow{
+    font-size: 21px;
     font-family: var(--char-family);
     font-weight: 600;
     color: #333;
     text-align: center;
     margin: 20px 0;
+    padding-top:5px;
 }
 
-.hero-media{
+.socials .hero-media{
     display: flex;
         justify-content: center;
         align-items: center;
@@ -202,17 +203,56 @@ svg.burger-icon {
         border-width: 3px;
         box-shadow: 2px 3px 5px 3px rgb(0 0 0 / 20%);
         border-radius: 30px;
-        max-width: 350px;
-        margin: 40px auto;
+        max-width: 300px;
+        padding:10px 20px;
         height: 40px;
+        margin-top:40px;
         transition: background-color 0.3s ease, transform 0.2s ease-in-out;
 }
 
-.hero-media:hover{
+.socials .hero-media:hover{
     background-color: var(--footer-color);
     transform: scale(1.1);
 }
 
+.socials .visit{
+font-size: 21px;
+    font-family: var(--char-family);
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+    padding-top: 5px;
+}
+.socials .hero-visit{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 350px;
+    font-family: var(--char-family);
+    font-size:18px;
+    background-color: var(--grey-color);
+    border-width: 3px;
+    box-shadow: 2px 3px 5px 3px rgb(0 0 0 / 20%);
+    border-radius: 30px;
+    height: 40px;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+    padding:10px 20px;
+    margin:40px 0px;
+}
+
+.socials .hero-visit:hover {
+    background-color: var(--footer-color);
+    transform: scale(1.1);
+        }
+
+.socials{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
 /* About */
 .about-container {
     position: relative;
@@ -249,12 +289,6 @@ svg.burger-icon {
     padding:0px 50px;
     font-family: var(--rob-family);
 
-}
-.about-title{
-    padding: 0px 50px;
-    font-family: var(--char-family);
-    font-size: 30px;
-    font-weight: 600;
 }
 
 .about-end {
@@ -351,15 +385,6 @@ svg.burger-icon {
 
  .carousel .testimonial {
      padding: 30px 0 10px;
- }
-
- .carousel .overview {
-     font-style: italic;
- }
-
- .carousel .overview b {
-     text-transform: uppercase;
-     color: var(--dark-brown);
  }
 
  .carousel-control-prev,
@@ -557,14 +582,18 @@ text-decoration:none;
         padding: 0px 100px;
         max-width: 800px;
     }
-    .about-title{
-        padding: 0px 100px;
-    }
     .h2{
         font-size:30px;
     }
-         .container-xl {
-             max-width: 1200px;
+    .socials{
+        flex-direction:row;
+        justify-content: center;
+        align-items:first baseline;
+        gap:50px;
+        margin-bottom: 20px;
+    }
+    .container-xl {
+     max-width: 1200px;
          }
     .carousel .carousel-item .img-box {
     width: 350px;
