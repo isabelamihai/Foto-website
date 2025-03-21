@@ -41,6 +41,7 @@
 .offer-title, .offer-price{
     font-size: 21px;
     margin:0;
+    font-weight: 600;
 }
 .maternity-image{
     width: 100%;
