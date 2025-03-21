@@ -77,7 +77,25 @@ img:not(.clickable){
     opacity: 1;
     transform: translateX(0);
 }
+/* loading screen */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
 
+#loading-screen svg {
+    width: 300px;
+    /* Poți ajusta dimensiunea logo-ului */
+    height: 300px;
+}
 /* Page styling detailed */
 .header-container {
     position: fixed;
