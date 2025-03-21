@@ -27,7 +27,7 @@
 
 .maternity-text{
     font-family: var(--char-family);
-    font-size: 18px;
+    font-size: 20px;
     font-weight:500;
 }
 .maternity-text li {
@@ -39,7 +39,7 @@
 }
 
 .offer-title, .offer-price{
-    font-size: 21px;
+    font-size: 24px;
     margin:0;
     font-weight: 600;
 }
@@ -81,10 +81,10 @@
             max-width: 600px;
         }
         .maternity-title{
-            font-size: 24px;
+            font-size: 30px;
         }
         .maternity-text{
-            font-size:21px;
+            font-size:24px;
         }
         .offer-title,
         .offer-price{
@@ -108,10 +108,10 @@
         max-width:900px;
     }
         .maternity-text {
-            font-size: 24px;
+            font-size: 30x;
         }
         .offer-title,
         .offer-price {
-            font-size: 30px;
+            font-size: 34px;
         }
 }
