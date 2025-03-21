@@ -76,12 +76,6 @@
         color: #fff;
         border: none;
     }
-    .contact-form input[type="submit"]:focus{
-        outline: none;
-    }
-    .contact-form input[type="submit"]{
-        cursor: pointer;
-    }
     .contact-form input[type="submit"]:hover{
         background-color: var(--border-color);
         color: #fff;
