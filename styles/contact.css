@@ -123,6 +123,13 @@
         transition: transform 0.2s ease-in;
         fill:var(--dark-brown);
         stroke:var(--dark-brown);
+        width: 35px;
+        height: 35px;
+    }
+
+    .social-media-contact{
+        display:flex;
+        gap:15px;
     }
     .contact-info .social-media:hover {
         transform:scale(1.5);
