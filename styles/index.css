@@ -277,7 +277,6 @@ font-size: 21px;
 .about-image {
     width: 100%;
     max-width: 250px;
-    padding: 20px 0px;
     height: auto;
     object-fit: cover;
     margin: 0;
@@ -289,6 +288,8 @@ font-size: 21px;
     text-align: center;
     padding:0px 50px;
     font-family: var(--rob-family);
+    font-weight: 400;
+    font-size:16px;
 
 }
 
@@ -483,15 +484,14 @@ text-decoration:none;
 
          .about-container{
             max-width: 600px;
-            margin-bottom: 30px;
             margin-top: 30px;
          }
          .about-image{
             max-width: 400px;
          }
         .about-content{
-                padding: 0px 30px;
-                max-width: 450px;
+            max-width:550px;
+                font-size:18px;
             }
         .about-title{
         padding: 0px 30px;
@@ -563,9 +563,6 @@ text-decoration:none;
         height: 100vh;
         background-image: url('../images/hero-dektop.avif');
     }
-    .about-container {
-        margin-bottom: 50px;
-        }
     .footer-container{
         padding: 10px 10px;
         font-size:21px;
@@ -580,8 +577,8 @@ text-decoration:none;
         max-width: 800px;
     }
     .about-content{
-        padding: 0px 100px;
-        max-width: 800px;
+        max-width:900px;
+        font-size:21px;
     }
     .h2{
         font-size:30px;
