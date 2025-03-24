@@ -279,7 +279,7 @@ font-size: 21px;
     max-width: 350px;
     margin: 0 auto;
     text-align: center;
-    border-radius:40px;
+    border-radius:20px;
     border-width: 3px;
     box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
     margin-top: 20px;
@@ -298,8 +298,10 @@ font-size: 21px;
     height: auto;
     object-fit: cover;
     margin: 0;
-    border-width:3px;
-    border-radius:40px;
+    border-radius: 50%;
+    border: 4px dotted var(--dark-brown);
+    padding:10px;
+    
 }
 
 .about-content{
