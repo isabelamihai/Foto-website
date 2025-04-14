@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://lauradanstudio.com/</loc>
+    <priority>1.00</priority>
+  </url>
+  <url><loc>https://lauradanstudio.com/contact.html</loc></url>
+  <url><loc>https://lauradanstudio.com/portofoliu.html</loc></url>
+  <url><loc>https://lauradanstudio.com/offers.html</loc></url>
+  <url><loc>https://lauradanstudio.com/privacy.html</loc></url>
+  <url><loc>https://lauradanstudio.com/terms.html</loc></url>
+  <url><loc>https://lauradanstudio.com/thanks.html</loc></url>
+
+  <!-- Pagini detaliu -->
+  <url><loc>https://lauradanstudio.com/details-anniversary.html</loc></url>
+  <url><loc>https://lauradanstudio.com/details-event.html</loc></url>
+  <url><loc>https://lauradanstudio.com/details-maternity.html</loc></url>
+  <url><loc>https://lauradanstudio.com/details-newborn.html</loc></url>
+
+  <!-- Galerie -->
+  <url><loc>https://lauradanstudio.com/gallery-anniversary.html</loc></url>
+  <url><loc>https://lauradanstudio.com/gallery-newborn.html</loc></url>
+  <url><loc>https://lauradanstudio.com/gallery-event.html</loc></url>
+  <url><loc>https://lauradanstudio.com/gallery-maternity.html</loc></url>
+
+</urlset>
