@@ -6,18 +6,17 @@
 📞 The last main page is the contact page, which presents a contact form connected to the client's email via PHP Mailer service and provides details on how the client can be reached through various methods. <br/>
 
 ## 🧱Structure
-• 15 HTML styled pages: Main pages(Home, Offers, Portofolio, Contact)
-• 1 Contact form using PHP Mailer
-• Optimized images for all devices (6 versions: 3 optimized AVIF and 3 backups MOZJPEG)
-• JS used for:
+• 15 HTML styled pages: Main pages(Home, Offers, Portofolio, Contact) <br/>
+• 1 Contact form using PHP Mailer <br/>
+• Optimized images for all devices (6 versions: 3 optimized AVIF and 3 backups MOZJPEG) <br/>
+• Managed server hosting from a third-party provider and Google page indexation 
+• JS used for: <br/>
 - disabling right-click, drag and drop and copy;
 - lightbox-gallery;
 - cookie-banner;
 - menu-burger;
 - loading screen logo;
 - transition for image, text;
-• Managed server hosting from a third-party provider and Google page indexation
-
 
 ## 🛠️Tech Stack
 
