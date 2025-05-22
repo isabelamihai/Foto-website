@@ -1,4 +1,4 @@
-# 🚧Foto-website
+# 🌐Foto-website
 
 📷 Developed a personal photography website for a small business. <br/>
 🏠 The site features a clean and simple design with a dynamic homepage, including smooth transitions, an interactive feedback carousel, and a social media footer alongside administrative pages such as terms and conditions, cookies, and confidentiality policy. <br/>
