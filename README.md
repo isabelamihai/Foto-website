@@ -9,7 +9,7 @@
 • 15 HTML styled pages: Main pages(Home, Offers, Portofolio, Contact) <br/>
 • 1 Contact form using PHP Mailer <br/>
 • Optimized images for all devices (6 versions: 3 optimized AVIF and 3 backups MOZJPEG) <br/>
-• Managed server hosting from a third-party provider and Google page indexation 
+• Managed server hosting from a third-party provider and Google page indexation <br/>
 • JS used for: <br/>
 - disabling right-click, drag and drop and copy;
 - lightbox-gallery;
