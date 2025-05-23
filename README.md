@@ -19,11 +19,9 @@
 - transition for image, text;
 
 ## 🛠️Tech Stack
-
 ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white&style=flat) ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white&style=flat) ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat) ![PHP](https://img.shields.io/badge/-PHP-777BB4?logo=php&logoColor=white&style=flat)
 
 ## 🔛Link live
-
 Check the live website here: <br/>
 ![Hostinger server] - https://lauradanstudio.com/ <br/>
 ![GhPages] - https://isabelamihai.github.io/Foto-website/
